@@ -463,6 +463,29 @@
   text-align: center;
 }
 
+@media only screen and (max-width: 900px) {
+  .brandd-head-2 {
+      font-size: 2.0rem;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+  .brandd-head {
+      font-size: 2.0rem;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+  .brand-para {
+      font-size: 1.0rem;
+  }
+
+}
+
+
+
 
 .main-brand-div {
   display: flex;
