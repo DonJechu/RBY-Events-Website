@@ -25,13 +25,16 @@ function HeroSection() {
                     </div>
                     <div className='btn-div'>
                         <div>
-                            <button class="c-button c-button--gooey"> Portfolio
-                                <div class="c-button__blobs">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                            </button>
+                            <a href="http://discord.rby.events/" target="_blank" rel="noopener noreferrer">
+                                <button class="c-button c-button--gooey"> 
+                                Portfolio
+                                    <div class="c-button__blobs">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </button>
+                            </a>
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style={{ display: 'blocl', height: "0", width: '0' }}>
                                 <defs>
                                     <filter id="goo">
