@@ -97,6 +97,13 @@
 
 }
 
+@media only screen and (max-width: 1201px) {
+    .filled-text {
+        top: -65%;
+    }
+
+}
+
 @media only screen and (max-width: 768px) {
     .filled-text {
         top: -20%;
