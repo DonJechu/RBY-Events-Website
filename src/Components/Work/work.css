@@ -58,6 +58,13 @@
     margin: 1% auto;
 
 }
+@media only screen and (max-width: 400px) {
+    .work-head {
+      font-size: 17px;
+    }
+  
+}
+
 
 /* .work-btn{
     width: 70%;
@@ -65,16 +72,19 @@
 
 
 .work-btn {
+    width: relative;
+    margin: auto;
     background-color: #FC544A;
     border: 1px solid #FFF;
     padding: 5px;
     position: relative;
-    width: 12.5em;
     height: 2.5em;
     transition: 0.5s;
     font-weight: 500;
     font-size: 17px;
     border-radius: 0.4em;
+    justify-content: center;
+
 }
 
 .work-btn p {
