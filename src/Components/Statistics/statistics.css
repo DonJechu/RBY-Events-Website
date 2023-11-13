@@ -37,6 +37,8 @@
     z-index: 1;
 }
 
+
+
 .filled-text p {
     font-size: 1.05rem;
     
@@ -142,6 +144,13 @@
     }
 
 }
+@media only screen and (max-width: 401px) {
+    .filled-text {
+        font-size: 6.5rem;
+        top: -50%;
+    }
+  
+}
 
 @media only screen and (max-width: 768px) {
     .views-div {
@@ -245,6 +254,13 @@
     .outlined-text {
         font-size: 2.6em;
         top: -33.5%;
+    }
+
+}
+@media only screen and (max-width: 401px) {
+    .outlined-text {
+        font-size: 2.6em;
+        top: -36%;
     }
 
 }
@@ -379,3 +395,12 @@
     font-weight: 600;
     text-transform: uppercase;
   }
+
+  @media only screen and (max-width: 401px) {
+    .text-div {
+        font-size: 17px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+  
+}
