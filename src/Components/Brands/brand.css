@@ -19,6 +19,7 @@
     top: -20px;
     margin-bottom: -120px;
 }
+
 @media only screen and (max-width: 768px) {
     .main-brand {
         top: -20px;
@@ -40,6 +41,8 @@
     }
 
 }
+
+
 
 .my-slider {
     padding: 10 70px;
