@@ -50,7 +50,7 @@ function Statistics() {
                     <div className="filled-text">{counter1}M
                         <p>Views on Youtube</p>
                     </div>
-                    <div className="filled-text">{counter2}M
+                    <div className="filled-text">{counter2}
                         <p>Satisfied customers</p>
                     </div>
                     <div className="filled-text">{counter3}M
