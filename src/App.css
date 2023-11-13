@@ -174,17 +174,28 @@
     /* height: 50px !important; */
   }
 
-  .brandd-head,
-  .brandd-head-2 {
-    border-radius: 1em;
 
-    font-size: 35px !important;
-    
+  @media only screen and (max-width: 401px) {
+    .brandd-2,
+    .brandd {
+      border-radius: 1em;
+      width: 40%; /* Ajusta el ancho según tus necesidades */
+      height: 20vh !important; /* Ajusta la altura según tus necesidades */
+    }
+  
+    .brandd-head {
+      border-radius: 1em;
+      font-size: 26px !important; /* Ajusta el tamaño de fuente según tus necesidades */
+    }
+    .brandd-head-2 {
+      border-radius: 1em;
+      font-size: 26px !important; /* Ajusta el tamaño de fuente según tus necesidades */
+    }
+    p.brand-para {
+      font-size: 14px; /* Ajusta el tamaño de fuente según tus necesidades */
+    }
   }
-
-  p {
-    font-size: 14px;
-  }
+  
 
   .hero-para {
 
@@ -288,6 +299,7 @@
   .brandd-head-2 {
     font-size: 30px;
   }
+
 
   .hero-para {
 
@@ -437,6 +449,7 @@
   text-align: center;
 }
 
+
 .brand-para {
   font-size: 1.4rem;
   font-weight: 500;
@@ -458,6 +471,18 @@
   background-color: #fff;
 
 }
+@media only screen and (max-width: 401px) {
+  .brandd-2 {
+    width: 40%;
+    height: 30vh;
+  }
+}
+@media only screen and (max-width: 401px) {
+  .brandd {
+    width: 40%;
+    height: 30vh;
+  }
+}
 
 .brandd-head-2 {
   color: #2C2C2D;
@@ -466,16 +491,27 @@
   text-align: center;
 }
 
+
+
 @media only screen and (max-width: 900px) {
   .brandd-head-2 {
-      font-size: 2.0rem;
+    font-size: 2.7rem;
   }
 
 }
 
+@media only screen and (max-width: 600px) {
+  .brandd-head-2 {
+    font-size: 0.1rem;
+  }
+
+}
+
+
+
 @media only screen and (max-width: 900px) {
   .brandd-head {
-      font-size: 2.0rem;
+      font-size: 2.7rem;
   }
 
 }
@@ -486,8 +522,18 @@
   }
 
 }
+@media only screen and (max-width: 800px) {
+  .brand-para {
+      font-size: 0.85rem;
+  }
 
+}
+@media only screen and (max-width: 700px) {
+  .brand-para {
+      font-size: 1.9rem;
+  }
 
+}
 
 
 .main-brand-div {
