@@ -270,6 +270,7 @@
 
 }
 
+
 .text-btn-div{
     display: flex;
     flex-direction: row;
@@ -286,7 +287,34 @@
 
 
 /* btn ready to start */
+@media only screen and (max-width: 1000px) {
+    .ready-to-start p {
+    width: 5.5em;
+    font-weight: 500;
+    font-size: 1.05em;
+    left: 1.2em;
+    }
+  
+}
+@media only screen and (max-width: 800px) {
+    .ready-to-start p {
+    width: 5.5em;
+    font-weight: 500;
+    font-size: 1.05em;
+    }
+  
+}
 
+@media only screen and (max-width: 700px) {
+    .ready-to-start p {
+    width: 17em;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .ready-to-start p {
+    width: 17em;
+    }
+}
 .ready-to-start {
     text-align: center;
     background-color: #FC544A;
@@ -297,7 +325,7 @@
     height: 2em;
     transition: 0.5s;
     font-weight: 500;
-    font-size: 27px;
+    font-size: 1.35em;
     border-radius: 0.6em;
     left: 0.2em;
     
