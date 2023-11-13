@@ -13,6 +13,13 @@
 
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+@media only screen and (max-width: 401px) {
+    .main-work-div {
+        padding: 27.5px;
+        width: 20em;
+    }
+  
+}
 
 /* heading */
 .work-head {
@@ -26,7 +33,12 @@
     align-items: center;
     /* margin: auto; */
 }
-
+@media only screen and (max-width: 401px) {
+    .work-head {
+    font-size: 1.05em;
+    }
+  
+}
 
 
 
@@ -45,6 +57,8 @@
     /* Adjust the gap as needed */
 }
 
+
+
 .grid-container div {
     width: 100%;
     /* Make each grid item take 100% width of its container */
@@ -57,12 +71,6 @@
     text-align: center !important;
     margin: 1% auto;
 
-}
-@media only screen and (max-width: 400px) {
-    .work-head {
-      font-size: 17px;
-    }
-  
 }
 
 
@@ -86,6 +94,7 @@
     justify-content: center;
 
 }
+
 
 .work-btn p {
 
