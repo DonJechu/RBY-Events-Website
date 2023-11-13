@@ -199,9 +199,30 @@
     }
 
 }
+@media only screen and (max-width: 590px) {
+    .outlined-text {
+        font-size: 3.7em;
+        top: -33%;
+    }
+
+}
 @media only screen and (max-width: 555px) {
     .outlined-text {
         font-size: 3.5em;
+        top: -33%;
+    }
+
+}
+@media only screen and (max-width: 520px) {
+    .outlined-text {
+        font-size: 3.3em;
+        top: -33%;
+    }
+
+}
+@media only screen and (max-width: 500px) {
+    .outlined-text {
+        font-size: 3.3em;
         top: -33%;
     }
 
