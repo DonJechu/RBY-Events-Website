@@ -220,6 +220,34 @@
     }
 
 }
+@media only screen and (max-width: 415px) {
+    .outlined-text {
+        font-size: 2.6em;
+        top: -33.5%;
+    }
+
+}
+@media only screen and (max-width: 375px) {
+    .outlined-text {
+        font-size: 2.5em;
+        top: -33.5%;
+    }
+
+}
+@media only screen and (max-width: 360px) {
+    .outlined-text {
+        font-size: 2.4em;
+        top: -33.5%;
+    }
+
+}
+@media only screen and (max-width: 340px) {
+    .outlined-text {
+        font-size: 2.3em;
+        top: -33.5%;
+    }
+
+}
 
 .text-btn-div{
     display: flex;
