@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import './navbar.css'
 import Hamburger from './hamburger';
-import Logo from '../../assests/logo.png'
+import Logo from '../../assests/logo.png';
 
 const Navbar = () => {
     const [showNavbar, setShowNavbar] = useState(false);
@@ -15,7 +15,10 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="container">
                 <div className="logo">
-                    <img src={Logo} alt="" className="logo-img" />
+                    {/* Envolvemos la imagen del logo con NavLink */}
+                    <NavLink to="/" onClick={handleShowNavbar}>
+                        <img src={Logo} alt="" className="logo-img" />
+                    </NavLink>
                 </div>
                 <div className="menu-icon" onClick={handleShowNavbar}>
                     <Hamburger />
@@ -23,25 +26,28 @@ const Navbar = () => {
                 <div className={`nav-elements ${showNavbar ? "active" : ""}`}>
                     <ul>
                         <li>
-                            {/* <NavLink to="/" onClick={handleShowNavbar}> */}
+                            {/* Ajusta las rutas según tus necesidades */}
+                            <NavLink to="/" onClick={handleShowNavbar}>
                                 Home
-                            {/* </NavLink> */}
+                            </NavLink>
                         </li>
                         <li>
-                            {/* <NavLink to="/blogs" onClick={handleShowNavbar}> */}
-                                About
-                            {/* </NavLink> */}
+                            <NavLink to="/resume" onClick={handleShowNavbar}>
+                                Portfolio
+                            </NavLink>
                         </li>
                         <li>
-                            {/* <NavLink to="/projects" onClick={handleShowNavbar}> */}
+                            <a href="#work" onClick={handleShowNavbar}>
                                 Work
-                            {/* </NavLink> */}
+                            </a>
                         </li>
                         <li>
-                            {/* <NavLink to="/about" onClick={handleShowNavbar}> */}
+                            {/* Utilizamos href con el identificador de la sección */}
+                            <a href="#service" onClick={handleShowNavbar}>
                                 Services
-                            {/* </NavLink> */}
+                            </a>
                         </li>
+
                     </ul>
                 </div>
             </div>
