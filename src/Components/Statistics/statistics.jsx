@@ -43,7 +43,6 @@ function Statistics() {
     }, []);
 
     return (
-
         <>
             <div className="main-statistics">
                 <div style={{ display: 'flex', justifyContent: 'center' }} className='views-div'>
