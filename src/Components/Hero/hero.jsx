@@ -2,6 +2,12 @@ import React from 'react';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import the AOS styles
+import { Link } from 'react-router-dom';
+import Footer from '../Footer/footer';
+import Brands from '../Brands/brands';
+// import { Analytics } from '@vercel/analytics/react';
+import Service from '../Services/services';
+import Statistics from '../Statistics/statistics';
 
 function HeroSection() {
     useEffect(() => {
@@ -25,16 +31,19 @@ function HeroSection() {
                     </div>
                     <div className='btn-div'>
                         <div>
-                            <a href="http://discord.rby.events/" target="_blank" rel="noopener noreferrer">
-                                <button class="c-button c-button--gooey"> 
-                                Portfolio
+                            {/* <a href="http://discord.rby.events/" target="_blank" rel="noopener noreferrer"> */}
+
+                            <Link to='/resume'>
+                                <button class="c-button c-button--gooey">
+                                    Portfolio
                                     <div class="c-button__blobs">
                                         <div></div>
                                         <div></div>
                                         <div></div>
                                     </div>
                                 </button>
-                            </a>
+                            </Link>
+                            {/* </a> */}
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style={{ display: 'blocl', height: "0", width: '0' }}>
                                 <defs>
                                     <filter id="goo">
@@ -80,7 +89,7 @@ function HeroSection() {
                             </p>
                         </div>
                         <div className='brandd'
-                            data-aos="fade-left" duration='2000' 
+                            data-aos="fade-left" duration='2000'
                         >
                             <h2 className='brandd-head'>FOR BRANDS </h2>
                             <p className='brand-para'>
@@ -91,6 +100,20 @@ function HeroSection() {
                     </div>
                 </div>
             </section>
+
+
+            <div>
+
+                <Statistics />
+                <Service />
+
+                {/* <Analytics /> */}
+
+                <Brands />
+
+                <Footer />
+
+            </div>
         </>
 
     );
