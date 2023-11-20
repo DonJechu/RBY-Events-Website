@@ -8,6 +8,8 @@ import Statistics from './Components/Statistics/statistics';
 
 import Footer from './Components/Footer/footer.jsx';
 
+import {Analytics} from "@vercel/analytics/react"
+
 function App() {
 
   return (
