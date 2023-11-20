@@ -21,8 +21,8 @@ function App() {
         <Service />
         <Brands />
         <Footer />
+        <Analytics />
       </div>
-    <Analytics />
     </>
   );
 }
