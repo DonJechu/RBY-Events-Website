@@ -53,6 +53,9 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    overflow: hidden; /* Añade un overflow: hidden al contenedor */
+    border-radius: 13px; /* Ajusta el valor de border-radius según tus preferencias */
     /*gap: 2px; */
     /* Adjust the gap as needed */
 }
@@ -61,6 +64,8 @@
 
 .grid-container div {
     width: 100%;
+    position: relative;
+    overflow: hidden; /* Añade un overflow: hidden al contenedor de cada imagen */
     /* Make each grid item take 100% width of its container */
 }
 
@@ -137,3 +142,31 @@
     border-radius: 20px 20px 20px 20px;
 
 }*/
+
+.grid-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Añade una transición para suavizar el cambio */
+}
+
+.grid-container img:hover {
+    transform: scale(1.1); /* Un pequeño aumento de escala al pasar el ratón para un efecto adicional */
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Ajusta la opacidad y el color según tus preferencias */
+    transition: background 0.3s ease-in-out; /* Añade una transición para suavizar el cambio */
+}
+
+.grid-container div:hover .image-overlay {
+    background: rgba(0, 0, 0, 0); /* Al pasar el ratón, la opacidad se reduce a 0 */
+}
+
+.grid-container div:hover img {
+    transform: scale(1.1); /* Un pequeño aumento de escala al pasar el ratón */
+}
