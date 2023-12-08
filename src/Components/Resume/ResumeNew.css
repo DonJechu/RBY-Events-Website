@@ -30,6 +30,17 @@
   transition: transform 0.3s ease-in-out; /* Añade una transición para suavizar el cambio */
 }
 
+.left-image{
+  width: 40%; /* Puedes ajustar este valor según el espacio que deseas entre las imágenes */
+  border-radius: 28px;
+  margin-top: 20px;
+}
+.right-image {
+  width: 25%; /* Puedes ajustar este valor según el espacio que deseas entre las imágenes */
+  border-radius: 28px;
+  margin-top: 20px;
+}
+
 /* Estilos específicos para cada contenedor de imagen */
 .firstdiv, .seconddiv, .thirddiv, .fourthdiv {
   width: 50%;
@@ -40,7 +51,6 @@
   max-width: 100%;
   border-radius: 28px;
   margin-top: 20px; /* Ajusta según tu preferencia */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombra alrededor de las imágenes */
 }
 
 
