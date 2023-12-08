@@ -1,6 +1,8 @@
 import portfolio1 from '../../assests/portfolio1.png';
 import portfolio2 from '../../assests/portfolio2.png';
 import portfolio3 from '../../assests/portfolio3.png';
+import portfolio4 from '../../assests/portfolio4.png';
+import portfolio5 from '../../assests/portfolio5.png';
 
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
@@ -55,6 +57,25 @@ function ResumeNew() {
               />
             </div>
           </Row>
+
+          {/* Agrega una nueva Row para las dos imágenes al lado de la otra */}
+          <Row className="resume justify-content-center align-items-center">
+            <div className="center-image left-image">
+              <img
+                src={portfolio4}
+                alt="Cuarta Imagen"
+                className="zoom-image"
+              />
+            </div>
+            <div className="center-image right-image">
+              <img
+                src={portfolio5}
+                alt="Quinta Imagen"
+                className="zoom-image"
+              />
+            </div>
+          </Row>
+
 
           <Row style={{ justifyContent: "center", position: "relative" }}>
             
