@@ -1,6 +1,6 @@
 import portfolio1 from '../../assests/portfolio1.png';
 import portfolio2 from '../../assests/portfolio2.png';
-import portfolio3 from '../../assests/portfolio3.jpn';
+import portfolio3 from '../../assests/portfolio4.png';
 
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
