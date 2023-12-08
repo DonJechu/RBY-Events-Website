@@ -1,5 +1,6 @@
 import portfolio1 from '../../assests/portfolio1.png';
 import portfolio2 from '../../assests/portfolio2.png';
+import portfolio3 from '../../assests/portfolio3.jpn';
 
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
@@ -38,6 +39,17 @@ function ResumeNew() {
             <div className="center-image">
               <img
                 src={portfolio2}
+                alt="Segunda Imagen"
+                className="zoom-image" // Agrega esta clase para aplicar el efecto de zoom
+              />
+            </div>
+          </Row>
+
+          {/* Agrega una nueva Row para la segunda imagen */}
+          <Row className="resume justify-content-center align-items-center">
+            <div className="center-image">
+              <img
+                src={portfolio3}
                 alt="Segunda Imagen"
                 className="zoom-image" // Agrega esta clase para aplicar el efecto de zoom
               />
