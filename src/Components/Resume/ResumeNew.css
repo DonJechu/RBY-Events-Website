@@ -30,7 +30,7 @@
 @media only screen and (max-width: 701px) {
   .center-image {
     text-align: center;
-    max-width: 82%;
+    max-width: 90%;
     position: relative;
     overflow: hidden; /* Añade un overflow: hidden al contenedor */
     border-radius: 15px;
