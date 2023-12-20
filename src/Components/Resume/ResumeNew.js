@@ -3,6 +3,9 @@ import portfolio2 from '../../assests/portfolio2.png';
 import portfolio3 from '../../assests/portfolio3.png';
 import portfolio4 from '../../assests/portfolio4.png';
 import portfolio5 from '../../assests/portfolio5.png';
+import portfolio6 from '../../assests/portfolio6.png';
+import portfolio7 from '../../assests/portfolio7.png';
+
 
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
@@ -47,16 +50,6 @@ function ResumeNew() {
             </div>
           </Row>
 
-          {/* Agrega una nueva Row para la segunda imagen */}
-          <Row className="resume justify-content-center align-items-center">
-            <div className="center-image">
-              <img
-                src={portfolio3}
-                alt="Segunda Imagen"
-                className="zoom-image" // Agrega esta clase para aplicar el efecto de zoom
-              />
-            </div>
-          </Row>
 
           {/* Agrega una nueva Row para las dos imágenes al lado de la otra */}
           <Row className="resume justify-content-center align-items-center">
@@ -76,6 +69,35 @@ function ResumeNew() {
             </div>
           </Row>
 
+            {/* Agrega una nueva Row para la segunda imagen */}
+            <Row className="resume justify-content-center align-items-center">
+            <div className="center-image">
+              <img
+                src={portfolio3}
+                alt="Segunda Imagen"
+                className="zoom-image" // Agrega esta clase para aplicar el efecto de zoom
+              />
+            </div>
+          </Row>
+
+
+          <Row className="resume justify-content-center align-items-center">
+          <div className="center-image right-image">
+              <img
+                src={portfolio7}
+                alt="Septima Imagen"
+                className="zoom-image"
+              />
+            </div>
+            <div className="center-image left-image">
+              <img
+                src={portfolio6}
+                alt="Sexta Imagen"
+                className="zoom-image"
+              />
+            </div>
+            
+          </Row>
 
           <Row style={{ justifyContent: "center", position: "relative" }}>
             
