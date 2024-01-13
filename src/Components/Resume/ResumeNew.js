@@ -5,6 +5,8 @@ import portfolio4 from '../../assests/portfolio4.png';
 import portfolio5 from '../../assests/portfolio5.png';
 import portfolio6 from '../../assests/portfolio6.png';
 import portfolio7 from '../../assests/portfolio7.png';
+import portfolio8 from '../../assests/portfolio8.png';
+import portfolio85 from '../../assests/portfolio8-5.png';
 
 
 import React, { useState, useEffect } from "react";
@@ -34,17 +36,6 @@ function ResumeNew() {
               <img
                 src={portfolio1}
                 alt="Portfolio1"
-                className="zoom-image" // Agrega esta clase para aplicar el efecto de zoom
-              />
-            </div>
-          </Row>
-
-          {/* Agrega una nueva Row para la segunda imagen */}
-          <Row className="resume justify-content-center align-items-center">
-            <div className="center-image">
-              <img
-                src={portfolio2}
-                alt="Segunda Imagen"
                 className="zoom-image" // Agrega esta clase para aplicar el efecto de zoom
               />
             </div>
@@ -96,7 +87,25 @@ function ResumeNew() {
                 className="zoom-image"
               />
             </div>
-            
+          </Row>
+
+
+          <Row className="resume justify-content-center align-items-center">
+          <div className="center-image left-image">
+              <img
+                src={portfolio2}
+                alt="Sexta Imagen"
+                className="zoom-image"
+              />
+            </div>
+          <div className="center-image right-image">
+              <img
+                src={portfolio85}
+                alt="Octava Imagen"
+                className="zoom-image"
+              />
+            </div>
+
           </Row>
 
           <Row style={{ justifyContent: "center", position: "relative" }}>
