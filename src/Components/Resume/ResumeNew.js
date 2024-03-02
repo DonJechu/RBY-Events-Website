@@ -7,6 +7,7 @@ import portfolio6 from '../../assests/portfolio6.png';
 import portfolio7 from '../../assests/portfolio7.png';
 import portfolio8 from '../../assests/portfolio8.png';
 import portfolio85 from '../../assests/portfolio8-5.png';
+import portfolio9 from '../../assests/portfolio9.png';
 
 
 import React, { useState, useEffect } from "react";
@@ -106,6 +107,14 @@ function ResumeNew() {
               />
             </div>
 
+          <div className="center-image">
+              <img
+                src={portfolio9}
+                alt="Novena Imagen"
+                className="zoom-image"
+              />
+            </div>
+                  
           </Row>
 
           <Row style={{ justifyContent: "center", position: "relative" }}>
