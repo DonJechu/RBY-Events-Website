@@ -46,16 +46,16 @@ function Statistics() {
         <>
             <div className="main-statistics">
                 <div style={{ display: 'flex', justifyContent: 'center' }} className='views-div'>
-                    <div className="filled-text">{counter1}M
+                    <div className="filled-text">+{counter1}M
                         <p>Views on Youtube</p>
                     </div>
-                    <div className="filled-text">{counter2}
+                    <div className="filled-text">+{counter2}
                         <p>Satisfied customers</p>
                     </div>
-                    <div className="filled-text">{counter3}M
+                    <div className="filled-text">+{counter3}M
                         <p>Likes on YouTube</p>
                     </div>
-                    <div className="filled-text">{counter4}k
+                    <div className="filled-text">+{counter4}k
                         <p>Watch-time Hours </p>
                     </div>
                 </div>
