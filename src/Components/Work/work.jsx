@@ -2,7 +2,7 @@ import './work.css'
 import React, { useEffect } from 'react';
 import work from '../../assests/work.png'
 import work2 from '../../assests/work2.jpg'
-import work3 from '../../assests/portfolio69.png'
+import work3 from '../../assests/portfolio9.png'
 import work4 from '../../assests/work4.png'
 
 import AOS from 'aos';
