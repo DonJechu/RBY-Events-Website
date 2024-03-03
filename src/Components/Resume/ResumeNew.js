@@ -1,4 +1,4 @@
-import portfolio1 from '../../assests/portfolio1.png';
+import portfolio9 from '../../assests/portfolio1.png';
 import portfolio2 from '../../assests/portfolio2.png';
 import portfolio3 from '../../assests/portfolio3.png';
 import portfolio4 from '../../assests/portfolio4.png';
@@ -7,7 +7,7 @@ import portfolio6 from '../../assests/portfolio6.png';
 import portfolio7 from '../../assests/portfolio7.png';
 import portfolio8 from '../../assests/portfolio8.png';
 import portfolio85 from '../../assests/portfolio8-5.png';
-import portfolio9 from '../../assests/portfolio9.png';
+import portfolio1 from '../../assests/portfolio9.png';
 
 
 import React, { useState, useEffect } from "react";
