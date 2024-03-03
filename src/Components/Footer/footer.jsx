@@ -38,6 +38,7 @@ const Footer = () => {
                 <a href="#work" className="footer-links">Work</a>
                 <a href="#service" className="footer-links">Services</a>
                 <a href="https://twitter.com/RBYevents" target="_blank" className="footer-links">Twitter</a>
+                <a href="http://discord.rby.events" target="_blank" className="footer-links">Discord</a>
             </div>
         </div>
     </div>
