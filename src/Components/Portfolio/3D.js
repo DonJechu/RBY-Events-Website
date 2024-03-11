@@ -47,7 +47,7 @@ function ResumeNew() {
           <Row className="resume justify-content-center align-items-center">
             <div className="center-image left-image">
               <img
-                src={portfolio4}
+                src="https://imgur.com/iNqDi8m.gif"
                 alt="Cuarta Imagen"
                 className="zoom-image"
               />
@@ -60,6 +60,7 @@ function ResumeNew() {
               />
             </div>
           </Row>
+
 
             {/* Agrega una nueva Row para la segunda imagen */}
             <Row className="resume justify-content-center align-items-center">
