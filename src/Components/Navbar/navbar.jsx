@@ -32,11 +32,6 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/resume" onClick={handleShowNavbar}>
-                                Portfolio
-                            </NavLink>
-                        </li>
-                        <li>
                             <a href="#work" onClick={handleShowNavbar}>
                                 Work
                             </a>
@@ -46,6 +41,18 @@ const Navbar = () => {
                             <a href="#service" onClick={handleShowNavbar}>
                                 Services
                             </a>
+                        </li>
+                        
+                        <li>
+                            <NavLink to="/portfolio/3d" onClick={handleShowNavbar}>
+                                3D Modeling Portfolio
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/portfolio/server
+                            " onClick={handleShowNavbar}>
+                                Server Portfolio
+                            </NavLink>
                         </li>
 
                     </ul>
