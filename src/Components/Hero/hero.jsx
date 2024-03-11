@@ -33,7 +33,7 @@ function HeroSection() {
                         <div>
                             {/* <a href="http://discord.rby.events/" target="_blank" rel="noopener noreferrer"> */}
 
-                            <Link to='/resume'>
+                            <Link to='/portfolio/3d'>
                                 <button class="c-button c-button--gooey">
                                     Portfolio
                                     <div class="c-button__blobs">
