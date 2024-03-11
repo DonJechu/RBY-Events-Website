@@ -1,17 +1,15 @@
-import portfolio1 from '../../assests/portfolio/tab-rbyserver.png';
+import portfolio9 from '../../assests/portfolio/tab-rbyserver.png';
 import portfolio2 from '../../assests/portfolio/crate-rbyserver.png';
 import portfolio3 from '../../assests/portfolio/crate-rbyserver2.png';
-import portfolio4 from '../../assests/portfolio/rtp-rbyserver.gif';
-import portfolio5 from '../../assests/portfolio/emote1-rbyserver.gif';
-import portfolio6 from '../../assests/portfolio/emote2-rbyserver.gif';
-// import portfolio7 from '../../assests/portfolio7.png';
-import portfolio8 from '../../assests/portfolio/hats-rbyserver.png';
-import portfolio9 from '../../assests/portfolio/globes-rbyserver.gif';
+import portfolio6 from '../../assests/portfolio/emote1-rbyserver.gif';
+import portfolio7 from '../../assests/portfolio/emote2-rbyserver.gif';
+import portfolio85 from '../../assests/portfolio/hats-rbyserver.png';
+import portfolio1 from '../../assests/portfolio/globes-rbyserver.gif';
 
 
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
-import './ServerDevelopment.css'; // Importa tu archivo CSS
+import './ResumeNew.css'; // Importa tu archivo CSS
 import Footer from '../Footer/footer';
 
 function ResumeNew() {
@@ -32,9 +30,9 @@ function ResumeNew() {
           {/* Agregué una nueva Row para la imagen en el centro */}
           <Row className="resume justify-content-center align-items-center">
             {/* Aplica la clase al contenedor de la imagen */}
-            <div className="center-image1">
+            <div className="center-image">
               <img
-                src={portfolio1}
+                src={portfolio9}
                 alt="Portfolio1"
                 className="zoom-image" // Agrega esta clase para aplicar el efecto de zoom
               />
@@ -60,29 +58,34 @@ function ResumeNew() {
             </div>
           </Row>
 
+
+
             {/* Agrega una nueva Row para la segunda imagen */}
             <Row className="resume justify-content-center align-items-center">
             <div className="center-image">
               <img
-                src={portfolio4}
+                src="https://i.imgur.com/iNqDi8m.gif" // Cambia el src por el enlace proporcionado
                 alt="Segunda Imagen"
                 className="zoom-image" // Agrega esta clase para aplicar el efecto de zoom
               />
             </div>
-            </Row>
+          </Row>
+
+
+
 
 
           <Row className="resume justify-content-center align-items-center">
           <div className="center-image right-image">
               <img
-                src={portfolio6}
+                src={portfolio7}
                 alt="Septima Imagen"
                 className="zoom-image"
               />
             </div>
             <div className="center-image left-image">
               <img
-                src={portfolio8}
+                src={portfolio85}
                 alt="Sexta Imagen"
                 className="zoom-image"
               />
@@ -93,18 +96,20 @@ function ResumeNew() {
           <Row className="resume justify-content-center align-items-center">
           <div className="center-image left-image">
               <img
-                src={portfolio9}
+                src={portfolio1}
                 alt="Sexta Imagen"
                 className="zoom-image"
               />
             </div>
           <div className="center-image right-image">
               <img
-                src={portfolio5}
+                src={portfolio6}
                 alt="Octava Imagen"
                 className="zoom-image"
               />
             </div>
+
+
                   
           </Row>
 
