@@ -1,13 +1,10 @@
-import portfolio9 from '../../assests/portfolio1.png';
-import portfolio2 from '../../assests/portfolio2.png';
-import portfolio3 from '../../assests/portfolio3.png';
-import portfolio4 from '../../assests/portfolio4.png';
-import portfolio5 from '../../assests/portfolio5.png';
-import portfolio6 from '../../assests/portfolio6.png';
-import portfolio7 from '../../assests/portfolio7.png';
-import portfolio8 from '../../assests/portfolio8.png';
-import portfolio85 from '../../assests/portfolio8-5.png';
-import portfolio1 from '../../assests/portfolio9.png';
+import portfolio9 from '../../assests/portfolio/tab-rbyserver.png';
+import portfolio2 from '../../assests/portfolio/crate-rbyserver.png';
+import portfolio3 from '../../assests/portfolio/crate-rbyserver2.png';
+import portfolio6 from '../../assests/portfolio/emote1-rbyserver.gif';
+import portfolio7 from '../../assests/portfolio/emote2-rbyserver.gif';
+import portfolio85 from '../../assests/portfolio/hats-rbyserver.png';
+import portfolio1 from '../../assests/portfolio/globes-rbyserver.gif';
 
 
 import React, { useState, useEffect } from "react";
@@ -35,7 +32,7 @@ function ResumeNew() {
             {/* Aplica la clase al contenedor de la imagen */}
             <div className="center-image">
               <img
-                src={portfolio1}
+                src={portfolio9}
                 alt="Portfolio1"
                 className="zoom-image" // Agrega esta clase para aplicar el efecto de zoom
               />
@@ -47,14 +44,14 @@ function ResumeNew() {
           <Row className="resume justify-content-center align-items-center">
             <div className="center-image left-image">
               <img
-                src="https://imgur.com/iNqDi8m.gif"
+                src={portfolio2}
                 alt="Cuarta Imagen"
                 className="zoom-image"
               />
             </div>
             <div className="center-image right-image">
               <img
-                src={portfolio5}
+                src={portfolio3}
                 alt="Quinta Imagen"
                 className="zoom-image"
               />
@@ -62,11 +59,12 @@ function ResumeNew() {
           </Row>
 
 
+
             {/* Agrega una nueva Row para la segunda imagen */}
             <Row className="resume justify-content-center align-items-center">
             <div className="center-image">
               <img
-                src={portfolio3}
+                src="https://i.imgur.com/iNqDi8m.gif" // Cambia el src por el enlace proporcionado
                 alt="Segunda Imagen"
                 className="zoom-image" // Agrega esta clase para aplicar el efecto de zoom
               />
@@ -74,17 +72,20 @@ function ResumeNew() {
           </Row>
 
 
+
+
+
           <Row className="resume justify-content-center align-items-center">
           <div className="center-image right-image">
               <img
-                src={portfolio7}
+                src={portfolio6}
                 alt="Septima Imagen"
                 className="zoom-image"
               />
             </div>
             <div className="center-image left-image">
               <img
-                src={portfolio6}
+                src={portfolio7}
                 alt="Sexta Imagen"
                 className="zoom-image"
               />
@@ -95,7 +96,7 @@ function ResumeNew() {
           <Row className="resume justify-content-center align-items-center">
           <div className="center-image left-image">
               <img
-                src={portfolio2}
+                src={portfolio1}
                 alt="Sexta Imagen"
                 className="zoom-image"
               />
@@ -108,13 +109,7 @@ function ResumeNew() {
               />
             </div>
 
-          <div className="center-image">
-              <img
-                src={portfolio9}
-                alt="Novena Imagen"
-                className="zoom-image"
-              />
-            </div>
+
                   
           </Row>
 
