@@ -9,7 +9,9 @@ import Statistics from './Components/Statistics/statistics';
 import Footer from './Components/Footer/footer.jsx';
 import { Analytics } from '@vercel/analytics/react';
 import { Routes, Route } from 'react-router-dom';
-import ResumeNew from './Components/Resume/ResumeNew.js';
+import ResumeNew from './Components/Portfolio/3D.js';
+import ServerDevelopment from './Components/Portfolio/ServerDevelopment.js';
+import Datapack from './Components/Portfolio/Datapack.js';
 
 function App() {
 
@@ -22,7 +24,9 @@ function App() {
 
         <Routes>
           <Route path='/' element={<HeroSection />} />
-          <Route path='/resume' element={<ResumeNew />} />
+          <Route path='/portfolio/3d' element={<ResumeNew />} />
+          <Route path='/portfolio/server' element={<ServerDevelopment />} />
+          <Route path='/products/datapack' element={<Datapack />} />
 
           {/* <Route path='/' element={<Statistics />} />
 
