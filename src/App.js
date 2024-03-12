@@ -25,6 +25,7 @@ function App() {
           {/* Agrega la ruta NotFoundPage */}
           <Route path='*' element={<NotFoundPage />} />
         </Routes>
+        <Analytics />
       </div>
     </>
   );
