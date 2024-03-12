@@ -49,7 +49,7 @@ function Service() {
                         <div>
                             <TbSwords className='m-auto   icon' /></div>
                         <div>
-                            <p>Quality Assurance  </p>
+                            <p>Datapack Development  </p>
                         </div>
 
                     </div>
