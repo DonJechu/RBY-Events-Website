@@ -9,6 +9,8 @@ import brands1 from '../../assests/hasvik.png'
 import brands2 from '../../assests/sparta365.png'
 import brands3 from '../../assests/beem_gaming.png'
 import brands4 from '../../assests/nacho.png'
+import brands5 from '../../assests/dagar.jpg'
+
 
 const Brands = () => {
     const sliderSettings = {
@@ -45,6 +47,9 @@ const Brands = () => {
                 href="https://www.youtube.com/@nacho-minecraft" target="_blank" class="footer-links"><img src={brands4} alt="" className="brand-image"/>
             </a>
 
+            <a 
+                href="https://www.youtube.com/@dagar-minecraft" target="_blank" class="footer-links"><img src={brands5} alt="" className="brand-image"/>
+            </a>
 
             </Slider>
         </div>
