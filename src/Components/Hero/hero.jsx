@@ -35,7 +35,7 @@ function HeroSection() {
 
                             <Link to='/portfolio/3d'>
                                 <button class="c-button c-button--gooey">
-                                    Portfolio
+                                    3D Portfolio
                                     <div class="c-button__blobs">
                                         <div></div>
                                         <div></div>
