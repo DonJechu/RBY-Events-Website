@@ -169,3 +169,11 @@
       width: 68px; /* Ajusta el tamaño de las imágenes adicionales en dispositivos con un ancho de 320px */
   }
 }
+
+.tags-categories-button:focus,
+.tags-categories-button:active,
+.categories-button:focus,
+.categories-button:active {
+    outline: none; /* Elimina el borde de enfoque */
+    color: #FC544A; /* Mantiene el color del texto en gris */
+}
