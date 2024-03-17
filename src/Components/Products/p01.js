@@ -1,91 +1,132 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
-
-import './products.css'; // Importa tu archivo CSS
+import React, { useState } from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { FaPlus, FaMinus } from 'react-icons/fa';
+import coverImage from "../../assests/products/1.png";
+import image1 from "../../assests/products/1.png";
+import image2 from "../../assests/products/01/1.png";
+import image3 from "../../assests/products/01/2.png";
+import image4 from "../../assests/products/01/3.png";
 import Footer from '../Footer/footer';
-import portfolio1 from '../../assests/products/1.png';
-import portfolio2 from '../../assests/products/1.png';
-import portfolio3 from '../../assests/products/1.png';
+import './products.css';
 
-function ResumeNew() {
-  const [width, setWidth] = useState(1200);
+function PageWithCover() {
+    const [mainImage, setMainImage] = useState(coverImage);
+    const [selectedImage, setSelectedImage] = useState(image1);
+    const [showTags, setShowTags] = useState(false);
+    const [showCategories, setShowCategories] = useState(false);
 
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
+    const handleImageClick = (image) => {
+        setMainImage(image);
+        setSelectedImage(image);
+    };
 
-  return (
-    <>
-      <div>
-        <Container fluid className="resume-section">
-          <Row style={{ justifyContent: "center" }}>
-            {/* Aquí se encontraba el botón de descarga */}
-          </Row>
+    const toggleTags = () => {
+        setShowTags(!showTags);
+        setShowCategories(false);
+    };
 
-          <Row className="resume justify-content-center align-items-center">
-            {/* Producto 1 */}
-            <Col xs={12} sm={2} className="product-column">
-              <Link to="/products/01" className="product-link">
-                <div className="product-container">
-                  <img
-                    src={portfolio1}
-                    alt="Portfolio1"
-                    className="product-image"
-                  />
-                  <div className="product-name">Lanterns Enhanced</div>
-                  <div className="product-info">
-                    <div className="left-info">Byjechu</div>
-                    <div className="right-info">
-                      <div className="new-badge">New🆕</div>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </Col>
+    const toggleCategories = () => {
+        setShowCategories(!showCategories);
+        setShowTags(false);
+    };
 
-            {/* Producto 2 */}
-            <Col xs={12} sm={2} className="product-column">
-              <div className="product-container">
-                <img
-                  src={portfolio2}
-                  alt="Portfolio2"
-                  className="product-image"
-                />
-                <div className="product-name">Nombre del Producto 1</div>
-                <div className="product-info">
-                  <div className="left-info">Byjechu</div>
-                  <div className="right-info">
-                  <div className="new-badge">New🆕</div>
-                </div>
-                </div>
-              </div>
-            </Col>
+    return (
+        <>
+            <Container fluid className="page-container">
+                <Row>
+                    <Col xs={12} md={4} className="image-column align-self-start">
+                        <img
+                            src={mainImage}
+                            alt="Cover"
+                            className="cover-image"
+                        />
+                        <div className="additional-images-container">
+                            <img
+                                src={image1}
+                                alt="Image 1"
+                                className={`additional-image ${selectedImage === image1 ? 'selected' : ''}`}
+                                onClick={() => handleImageClick(image1)}
+                                style={{ objectFit: 'cover' }} 
+                            />
+                            <img
+                                src={image2}
+                                alt="Image 2"
+                                className={`additional-image ${selectedImage === image2 ? 'selected' : ''}`}
+                                onClick={() => handleImageClick(image2)}
+                                style={{ objectFit: 'cover' }} 
+                            />
+                            <img
+                                src={image3}
+                                alt="Image 3"
+                                className={`additional-image ${selectedImage === image3 ? 'selected' : ''}`}
+                                onClick={() => handleImageClick(image3)}
+                                style={{ objectFit: 'cover' }} 
+                            />
+                            <img
+                                src={image4}
+                                alt="Image 4"
+                                className={`additional-image ${selectedImage === image4 ? 'selected' : ''}`}
+                                onClick={() => handleImageClick(image4)}
+                                style={{ objectFit: 'cover' }} 
+                            />
+                        </div>
+                    </Col>
+                    <Col xs={12} md={6} className="content-column align-self-start">
+                        <h1 className="title mb-4">Lanterns Enhanced</h1>
+                        <p className="description mb-4">
+                            Lanterns Enhanced transforms <strong>Lanterns</strong>, <strong>Torches</strong> and <strong>Chains</strong>
+                            with revamped <strong>3D models</strong>, providing them with a fresh appearance. Moreover, it refines the <strong>
+                            third-person holding</strong> view for lanterns and torches, offering a more <strong>aesthetically</strong>
+                            pleasing and slightly realistic portrayal.
+                        </p>
+                        <p className="description mb-0">
+                            <strong>The pack includes:</strong>
+                            <ul className="custom-list">
+                                <li>3D Lanterns</li>
+                                <li>3D Torches</li>
+                                <li>3D Chains</li>
+                                <li>Third-Person Holding</li>
+                            </ul>
+                        </p>
+                        <a href="https://cdn.modrinth.com/data/FZ2oFlqL/versions/gJpc7dfr/Lanterns%2BEnhanced%20v1.0.1.zip" download>
+                            <Button variant="primary" className="download-button">Download Product</Button>
+                        </a>
+                        <div className="d-flex">
+                            <Button variant="secondary" className="down-buttons mr-2">Changelog</Button>
+                            <Button variant="secondary" className="down-buttons">Versions</Button>
+                        </div>
 
-            {/* Producto 3 */}
-            <Col xs={12} sm={2} className="product-column">
-              <div className="product-container">
-                <img
-                  src={portfolio3}
-                  alt="Portfolio3"
-                  className="product-image"
-                />
-                <div className="product-name">Nombre del Producto 1</div>
-                <div className="product-info">
-                  <div className="left-info">Byjechu</div>
-                  <div className="right-info">
-                  <div className="new-badge">New🆕</div>
-                </div>
-                </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </div>
+                        <div className="tags-categories">
+                            <hr className="separator" />
+                            <Button variant="link" className={`tags-categories-button ${showTags ? 'active' : ''}`} onClick={toggleTags}>
+                                Tags {showTags ? <FaMinus size={12} /> : <FaPlus size={12} />}
+                            </Button>
+                            {showTags && (
+                                <div className={`tag-list ${showTags ? 'active' : ''}`}>
+                                    <div className="tag">Environment</div>
+                                    <div className="tag">Misc</div>
+                                </div>
+                            )}
+                        </div>
 
-      <Footer />
-    </>
-  );
+                        <div className="tags-categories">
+                            <hr className="separator" />
+                            <Button variant="link" className={`categories-button ${showCategories ? 'active' : ''}`} onClick={toggleCategories}>
+                                Categories {showCategories ? <FaMinus size={12} /> : <FaPlus size={12} />}
+                            </Button>
+                            {showCategories && (
+                                <div className={`category-list ${showCategories ? 'active' : ''}`}>
+                                    <div className="category">Gui</div>
+                                    <div className="category">Models</div>
+                                </div>
+                            )}
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+            <Footer />
+        </>
+    );
 }
 
-export default ResumeNew;
+export default PageWithCover;
