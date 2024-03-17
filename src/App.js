@@ -23,8 +23,12 @@ function App() {
           <Route path='/' element={<HeroSection />} />
           <Route path='/portfolio/3d' element={<ResumeNew />} />
           <Route path='/portfolio/server' element={<ServerDevelopment />} />
+
           <Route path='/products' element={<Products />} />
+          <Route path='/product' element={<Products />} />
+
           <Route path='/products/01' element={<Products01 />} />
+          <Route path='/products/1' element={<Products01 />} />
 
           {/* Agrega la ruta NotFoundPage */}
           <Route path='*' element={<NotFoundPage />} />
