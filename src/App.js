@@ -7,8 +7,7 @@ import Statistics from './Components/Statistics/statistics';
 import Footer from './Components/Footer/footer.jsx';
 import { Analytics } from '@vercel/analytics/react';
 import { Routes, Route } from 'react-router-dom';
-import ResumeNew from './Components/Portfolio/3D.js';
-import ServerDevelopment from './Components/Portfolio/ServerDevelopment.js';
+import Portfolio from './Components/Portfolio/portfolio.js';
 import NotFoundPage from './Components/NotFoundPage/404.js';
 
 import Products from './Components/Products/index.js';
@@ -23,8 +22,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<HeroSection />} />
-          <Route path='/portfolio/3d' element={<ResumeNew />} />
-          <Route path='/portfolio/server' element={<ServerDevelopment />} />
+          <Route path='/portfolio' element={<Portfolio />} />
+          <Route path='/portfolio/servers' element={<Portfolio />} />
+          <Route path='/portfolio/server' element={<Portfolio />} />
+          <Route path='/portfolio/3d' element={<Portfolio />} />
 
           <Route path='/products' element={<Products />} />
           <Route path='/product' element={<Products />} />
