@@ -32,17 +32,11 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <a href="#work" onClick={handleShowNavbar}>
-                                Work
-                            </a>
-                        </li>
-                        <li>
                             {/* Utilizamos href con el identificador de la sección */}
                             <a href="#service" onClick={handleShowNavbar}>
                                 Services
                             </a>
                         </li>
-                        
                         <li>
                             <NavLink to="/portfolio/3d" onClick={handleShowNavbar}>
                                 3D Portfolio
