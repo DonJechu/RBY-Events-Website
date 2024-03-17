@@ -45,13 +45,19 @@ const Navbar = () => {
                         
                         <li>
                             <NavLink to="/portfolio/3d" onClick={handleShowNavbar}>
-                                3D Modeling Portfolio
+                                3D Portfolio
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/portfolio/server
                             " onClick={handleShowNavbar}>
                                 Server Portfolio
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/products
+                            " onClick={handleShowNavbar}>
+                                Products
                             </NavLink>
                         </li>
 
