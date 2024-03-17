@@ -91,10 +91,6 @@ function PageWithCover() {
                         <a href="https://cdn.modrinth.com/data/FZ2oFlqL/versions/gJpc7dfr/Lanterns%2BEnhanced%20v1.0.1.zip" download>
                             <Button variant="primary" className="download-button">Download Product</Button>
                         </a>
-                        <div className="d-flex">
-                            <Button variant="secondary" className="down-buttons mr-2">Changelog</Button>
-                            <Button variant="secondary" className="down-buttons">Versions</Button>
-                        </div>
 
                         <div className="tags-categories">
                             <hr className="separator" />
