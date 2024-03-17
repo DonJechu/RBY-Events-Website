@@ -27,9 +27,23 @@ body {
 }
 
 .nav-elements ul {
-  font-size: 25px;
+  font-size: 32px;
 }
-
+@media (max-width: 425px) {
+  .nav-elements ul {
+    font-size: 28px;
+  }
+}
+@media (max-width: 375px) {
+  .nav-elements ul {
+    font-size: 25px;
+  }
+}
+@media (max-width: 320px) {
+  .nav-elements ul {
+    font-size: 21px;
+  }
+}
 .nav-elements {
   position: absolute;
   right: 0;
