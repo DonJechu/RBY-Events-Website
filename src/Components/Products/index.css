@@ -2,11 +2,14 @@
   display: flex;
   flex-direction: column;
   border: 2px solid #e2e2e2;
-  border-radius: 9px; /* Borde redondeado */
-  margin: 20px auto; /* Margen superior e inferior de 20px y centrado horizontalmente */
-  padding: 20px; /* Relleno de 20px en todos los lados */
+  border-radius: 9px;
+  margin: 20px auto;
+  margin-bottom: 100px;
+  padding: 20px;
   text-align: center;
-  transition: transform 0.3s ease; /* Agrega una transición suave */
+  transition: transform 0.3s ease;
+  width: 300px; /* Ajusta el ancho deseado del contenedor */
+  scale: 1.35;
 }
 @media only screen and (min-width: 768px) {
   .product-container {
@@ -45,7 +48,10 @@
 }
 
 .product-image {
-  width: 200px; /* Tamaño de la imagen */
+  width: 100%; /* Ajusta la imagen para que ocupe todo el ancho del contenedor */
+  max-width: 100%; /* Garantiza que la imagen no se desborde del contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+  border-radius: 6px; /* Añade bordes redondeados */
 }
 
 
@@ -79,6 +85,7 @@
   border-radius: 3px;
   font-size: 0.7em;
 }
+
 
 @media only screen and (max-width: 375px) {
   .new-badge {
