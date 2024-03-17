@@ -9,6 +9,13 @@ import portfolio8 from '../../assests/portfolio8.png';
 import portfolio85 from '../../assests/portfolio8-5.png';
 import portfolio1 from '../../assests/portfolio9.png';
 
+import srvportfolio9 from '../../assests/portfolio/tab-rbyserver.png';
+import srvportfolio2 from '../../assests/portfolio/crate-rbyserver.png';
+import srvportfolio3 from '../../assests/portfolio/crate-rbyserver2.png';
+import srvportfolio6 from '../../assests/portfolio/emote1-rbyserver.gif';
+import srvportfolio7 from '../../assests/portfolio/emote2-rbyserver.gif';
+import srvportfolio85 from '../../assests/portfolio/hats-rbyserver.png';
+import srvportfolio1 from '../../assests/portfolio/globes-rbyserver.gif';
 
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
@@ -26,6 +33,10 @@ function ResumeNew() {
     <>
       <div>
         <Container fluid className="resume-section">
+        <Row style={{ justifyContent: "center", position: "relative" }}>
+            <h2 className="centered-title2">3D Modeling</h2>
+          </Row>
+
           <Row style={{ justifyContent: "center", position: "relative" }}>
             {/* Aquí se encontraba el botón de descarga */}
           </Row>
@@ -114,12 +125,116 @@ function ResumeNew() {
                 className="zoom-image"
               />
             </div>
+          </Row>
+
+          <Row style={{ justifyContent: "center", position: "relative" }}>
+          </Row>
+
+{/* SERVERS DEVELOPMENT PORTFOLIO */}
+          <div>
+        <Container fluid className="resume-section">
+        {/* Agregamos una línea horizontal como separador */}
+        <Row style={{ justifyContent: "center", position: "relative" }}>
+          <div style={{ width: '80%', margin: '6em auto' }}>
+            <hr className="separator" />
+          </div>
+        </Row>
+        <Row style={{ justifyContent: "center", position: "relative" }}>
+            <h2 className="centered-title">Servers Development</h2>
+          </Row>
+
+          {/* Agregué una nueva Row para la imagen en el centro */}
+          <Row className="resume justify-content-center align-items-center">
+            {/* Aplica la clase al contenedor de la imagen */}
+            <div className="center-image">
+              <img
+                src={srvportfolio9}
+                alt="Portfolio1"
+                className="zoom-image" // Agrega esta clase para aplicar el efecto de zoom
+              />
+            </div>
+          </Row>
+
+
+          {/* Agrega una nueva Row para las dos imágenes al lado de la otra */}
+          <Row className="resume justify-content-center align-items-center">
+            <div className="center-image left-image">
+              <img
+                src={srvportfolio2}
+                alt="Cuarta Imagen"
+                className="zoom-image"
+              />
+            </div>
+            <div className="center-image right-image">
+              <img
+                src={srvportfolio3}
+                alt="Quinta Imagen"
+                className="zoom-image"
+              />
+            </div>
+          </Row>
+
+
+
+            {/* Agrega una nueva Row para la segunda imagen */}
+            <Row className="resume justify-content-center align-items-center">
+            <div className="center-image">
+              <img
+                src="https://i.imgur.com/iNqDi8m.gif" // Cambia el src por el enlace proporcionado
+                alt="Segunda Imagen"
+                className="zoom-image" // Agrega esta clase para aplicar el efecto de zoom
+              />
+            </div>
+          </Row>
+
+
+
+
+
+          <Row className="resume justify-content-center align-items-center">
+          <div className="center-image right-image">
+              <img
+                src={srvportfolio7}
+                alt="Septima Imagen"
+                className="zoom-image"
+              />
+            </div>
+            <div className="center-image left-image">
+              <img
+                src={srvportfolio85}
+                alt="Sexta Imagen"
+                className="zoom-image"
+              />
+            </div>
+          </Row>
+
+
+          <Row className="resume justify-content-center align-items-center">
+          <div className="center-image left-image">
+              <img
+                src={srvportfolio1}
+                alt="Sexta Imagen"
+                className="zoom-image"
+              />
+            </div>
+          <div className="center-image right-image">
+              <img
+                src={srvportfolio6}
+                alt="Octava Imagen"
+                className="zoom-image"
+              />
+            </div>
+
+
                   
           </Row>
 
           <Row style={{ justifyContent: "center", position: "relative" }}>
             
           </Row>
+        </Container>
+      </div>
+
         </Container>
       </div>
 
