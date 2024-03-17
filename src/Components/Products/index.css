@@ -1,0 +1,138 @@
+.product-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #e2e2e2;
+  border-radius: 9px; /* Borde redondeado */
+  margin: 20px auto; /* Margen superior e inferior de 20px y centrado horizontalmente */
+  padding: 20px; /* Relleno de 20px en todos los lados */
+  text-align: center;
+  transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+@media only screen and (min-width: 768px) {
+  .product-container {
+    max-width: 220px; /* Ajusta el ancho máximo del contenedor del producto */
+    padding: 15px; /* Ajusta el relleno del contenedor */
+  }
+}
+.product-container:hover {
+  transform: scale(1.0475); /* Escala el contenedor al 110% en hover */
+}
+@media only screen and (max-width: 425px) {
+  .product-container {
+    max-width: 250px; /* Ajusta el ancho máximo del contenedor del producto */
+    padding: 10px; /* Ajusta el relleno del contenedor */
+  }
+}
+@media only screen and (max-width: 575px) {
+  .product-container {
+    max-width: 180px; /* Ajusta el ancho máximo del contenedor del producto */
+    padding: 10px; /* Ajusta el relleno del contenedor */
+    margin: 0 auto; /* Centra el recuadro horizontalmente */
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .product-column {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .product-column {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+  }
+}
+
+.product-image {
+  width: 200px; /* Tamaño de la imagen */
+}
+
+
+.product-name {
+  align-items: flex-start;
+  display: flex;
+  margin-top: 10px; /* Espaciado entre la imagen y el nombre */
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos a los extremos */
+  margin-top: 10px;
+}
+
+.left-info {
+  align-self: flex-end; /* Alinea "Byjechu" a la izquierda */
+  font-size: 0.75em; /* Tamaño de fuente más pequeño */
+  font-weight: 600;
+  color: #FC544A; /* Color rojo personalizado */
+}
+.right-info {
+  align-self: flex-start; /* Alinea "Byjechu" a la izquierda */
+}
+
+
+.new-badge {
+  background-color: #444;
+  color: #fff;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 0.7em;
+}
+
+@media only screen and (max-width: 375px) {
+  .new-badge {
+    display: inline-block;
+  }
+}
+
+
+
+
+.resume-section {
+  background-color: #ffffff; /* Cambia el color de fondo según tu preferencia */
+  padding: 50px 0;
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+/* Estilos específicos para cada contenedor de imagen */
+.firstdiv, .seconddiv, .thirddiv, .fourthdiv {
+  width: 50%;
+}
+
+/* Estilos generales para las imágenes */
+.resume img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 20px; /* Ajusta según tu preferencia */
+}
+@media only screen and (max-width: 401px) {
+  .resume img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 20px; /* Ajusta según tu preferencia */
+  }
+}
+@media only screen and (max-width: 701px) {
+  .resume img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-top: 20px; /* Ajusta según tu preferencia */
+  }
+}
+
+.work-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.zoom-image:hover {
+  transform: scale(1.1); /* Ajusta el valor según la cantidad de zoom que desees */
+}
