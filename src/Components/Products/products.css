@@ -1,180 +1,171 @@
-.product-container {
+.description {
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+  margin-top: 10px; /* Espaciado superior */
+}
+
+.title {
+  font-size: 28px; /* Tamaño de fuente más grande */
+  font-weight: bold; /* Texto en negrita */
+}
+
+.download-button {
+  margin-top: 20px; /* Espacio superior entre la descripción y el botón */
+  margin-bottom: 35px; /* Espacio inferior entre el botón y los tags */
+  width: 90%; /* Ancho del botón al 100% del contenedor */
+  background-color: #FC544A; /* Color de fondo del botón */
+  border-color: #FC544A; /* Color del borde del botón */
+}
+
+.download-button:hover {
+  background-color: #d33a2c; /* Cambia el color de fondo al pasar el ratón por encima */
+  border-color: #d33a2c; /* Cambia el color del borde al pasar el ratón por encima */
+}
+
+.image-column {
+  margin-left: 20px; /* Agrega margen a la izquierda para mover la imagen a la derecha */
+}
+
+.additional-images-container {
   display: flex;
-  flex-direction: column;
-  border: 2px solid #ccc;
-  margin: 20px;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease; /* Agrega una transición suave */
+  justify-content: space-between; /* Distribuye las imágenes de manera uniforme en el contenedor */
+  margin-top: 20px; /* Ajusta el valor según sea necesario */
 }
 
-.product-container:hover {
-  transform: scale(1.0475); /* Escala el contenedor al 110% en hover */
+.additional-image {
+  width: 100px; /* Ajusta el tamaño de las imágenes adicionales según sea necesario */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar sobre las imágenes */
+  width: 135px; /* Ajusta el tamaño deseado */
+  border-radius: 8px; /* Ajusta el valor de redondez */
 }
 
-.product-image {
-  width: 200px; /* Tamaño de la imagen */
+.additional-image.selected {
+  border: 2px solid #FC544A;
+  border-radius: 8px;
 }
 
-.product-name {
-  align-items: flex-start;
+.cover-image {
+  border-radius: 10px; /* Puedes ajustar el valor según tus preferencias */
+}
+
+.custom-list {
+  list-style-type: disc; /* Cambia el estilo del punto de lista a un círculo */
+  margin-left: 20px; /* Ajusta el margen izquierdo según sea necesario */
+}
+
+.custom-list li {
+  margin-bottom: 5px; /* Agrega un pequeño espacio entre cada elemento de la lista */
+}
+
+.tags-categories {
+  margin-bottom: 10px;
+}
+
+.tag-list,
+.category-list {
   display: flex;
-  margin-top: 10px; /* Espaciado entre la imagen y el nombre */
+  flex-wrap: wrap;
 }
 
-.product-info {
-  display: flex;
-  justify-content: space-between; /* Alinea los elementos a los extremos */
-  margin-top: 10px;
+.tag,
+.category {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
 }
 
-.left-info {
-  align-self: flex-end; /* Alinea "Byjechu" a la izquierda */
-  font-size: 0.75em; /* Tamaño de fuente más pequeño */
-  font-weight: 600;
-  color: #FC544A; /* Color rojo personalizado */
-}
-.right-info {
-  align-self: flex-start; /* Alinea "Byjechu" a la izquierda */
+.tag:hover,
+.category:hover {
+  background-color: #f0f0f0;
 }
 
-.new-badge {
-  background-color: #444; /* Color de fondo oscuro */
-  color: #fff; /* Color de texto blanco */
-  padding: 3px 6px; /* Espaciado interno más pequeño */
-  border-radius: 3px; /* Borde redondeado */
-  font-size: 0.7em; /* Tamaño de fuente más pequeño */
-}
-
-
-
-
-.resume-section {
-  background-color: #ffffff; /* Cambia el color de fondo según tu preferencia */
-  padding: 50px 0;
-}
-
-.resume {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px 0;
-}
-
-.center-image {
-  text-align: center;
-  max-width: 70%;
-  position: relative;
-  overflow: hidden; /* Añade un overflow: hidden al contenedor */
-  border-radius: 28px;
-}
-.center-image2 {
-  text-align: center;
-  max-width: 50%;
-  position: relative;
-  overflow: hidden; /* Añade un overflow: hidden al contenedor */
-  border-radius: 28px;
-}
-@media only screen and (max-width: 401px) {
-  .center-image {
-    text-align: center;
-    max-width: 82%;
-    position: relative;
-    overflow: hidden; /* Añade un overflow: hidden al contenedor */
-    border-radius: 12px;
-  }
-}
-@media only screen and (max-width: 701px) {
-  .center-image {
-    text-align: center;
-    max-width: 90%;
-    position: relative;
-    overflow: hidden; /* Añade un overflow: hidden al contenedor */
-    border-radius: 15px;
-  }
-}
-.center-image div {
+.separator {
   width: 100%;
-  position: relative;
-  overflow: hidden; /* Añade un overflow: hidden al contenedor */
-}
-.center-image img  {
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease-in-out; /* Añade una transición para suavizar el cambio */
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
 }
 
-.left-image{
-  width: 41.5%; /* Puedes ajustar este valor según el espacio que deseas entre las imágenes */
-  border-radius: 28px;
-  margin-top: 20px;
-}
-@media only screen and (max-width: 401px) {
-  .left-image{
-    width: 50%; /* Puedes ajustar este valor según el espacio que deseas entre las imágenes */
-    border-radius: 18px;
-    margin-top: 20px;
-  }
-}
-@media only screen and (max-width: 701px) {
-  .left-image{
-    width: 54%; /* Puedes ajustar este valor según el espacio que deseas entre las imágenes */
-    border-radius: 28px;
-    margin-top: 20px;
-  }
-}
-.right-image {
-  width: 24.5%; /* Puedes ajustar este valor según el espacio que deseas entre las imágenes */
-  border-radius: 28px;
-  margin-top: 20px;
-}
-@media only screen and (max-width: 401px) {
-  .right-image {
-    width: 33%; /* Puedes ajustar este valor según el espacio que deseas entre las imágenes */
-    border-radius: 28px;
-    margin-top: 20px;
-  }
-}
-@media only screen and (max-width: 701px) {
-  .right-image {
-    width: 33%; /* Puedes ajustar este valor según el espacio que deseas entre las imágenes */
-    border-radius: 28px;
-    margin-top: 20px;
-  }
+.tags-categories-button,
+.categories-button {
+  color: #888; /* Cambia el color del texto a gris */
+  text-decoration: none; /* Elimina el subrayado */
 }
 
-/* Estilos específicos para cada contenedor de imagen */
-.firstdiv, .seconddiv, .thirddiv, .fourthdiv {
-  width: 50%;
+.tags-categories-button:hover,
+.categories-button:hover {
+  color: #555; /* Cambia el color del texto al pasar el mouse por encima */
 }
-
-/* Estilos generales para las imágenes */
-.resume img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-top: 20px; /* Ajusta según tu preferencia */
-}
-@media only screen and (max-width: 401px) {
-  .resume img {
-    max-width: 100%;
-    border-radius: 12px;
-    margin-top: 20px; /* Ajusta según tu preferencia */
-  }
-}
-@media only screen and (max-width: 701px) {
-  .resume img {
-    max-width: 100%;
-    border-radius: 15px;
-    margin-top: 20px; /* Ajusta según tu preferencia */
-  }
-}
-
-.work-container {
-  display: flex;
-  justify-content: space-between;
+.tags-categories-button.active,
+.categories-button.active {
+    color: #FC544A; /* Cambia el color del texto a rojo */
 }
 
 
-.zoom-image:hover {
-  transform: scale(1.1); /* Ajusta el valor según la cantidad de zoom que desees */
+.down-buttons {
+  margin-bottom: 45px; /* Espacio inferior entre el botón y los tags */
+  width: 42.75%; /* Ancho del botón al 100% del contenedor */
+  background-color: #888; /* Color de fondo del botón */
+  border-color: #888; /* Color del borde del botón */
+}
+
+.down-buttons:hover {
+  background-color: #777; /* Cambia el color de fondo al pasar el ratón por encima */
+  border-color: #777; /* Cambia el color del borde al pasar el ratón por encima */
+}
+
+/* Añade margen derecho al primer botón y margen izquierdo al segundo botón */
+.d-flex .down-buttons:first-child {
+  margin-right: 20px;
+}
+
+.d-flex .down-buttons:last-child {
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .content-column {
+      margin-top: 20px; /* Agrega un espacio superior en dispositivos móviles */
+  }
+
+  .additional-images-container {
+      margin-top: 10px; /* Reduce el margen superior en dispositivos móviles */
+  }
+
+  .additional-image {
+      width: 55px; /* Reduce el tamaño de las imágenes adicionales en dispositivos móviles */
+  }
+
+  .download-button {
+      width: 100%; /* Ajusta el ancho del botón de descarga al 100% en dispositivos móviles */
+      margin-top: 20px; /* Agrega espacio superior entre la descripción y el botón de descarga */
+      margin-bottom: 20px; /* Reduce el espacio inferior entre el botón de descarga y los tags */
+  }
+
+  .tags-categories-wrapper {
+      margin-top: 20px; /* Agrega un espacio superior entre el botón de descarga y las etiquetas/categorías */
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .additional-images-container .additional-image {
+      width: 92px; /* Ajusta el tamaño de las imágenes adicionales en dispositivos con un ancho de 425px */
+  }
+
+  .additional-images-container {
+      margin-bottom: 25px; /* Ajusta el margen inferior entre las imágenes y el título "Lanterns Enhanced" */
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .additional-images-container .additional-image {
+      width: 78px; /* Ajusta el tamaño de las imágenes adicionales en dispositivos con un ancho de 375px */
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .additional-images-container .additional-image {
+      width: 68px; /* Ajusta el tamaño de las imágenes adicionales en dispositivos con un ancho de 320px */
+  }
 }
