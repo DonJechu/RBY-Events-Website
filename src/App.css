@@ -490,50 +490,71 @@
   font-size: 4.25rem;
   text-align: center;
 }
-
-
-
 @media only screen and (max-width: 900px) {
   .brandd-head-2 {
     font-size: 2.7rem;
   }
-
 }
 
 @media only screen and (max-width: 600px) {
   .brandd-head-2 {
-    font-size: 0.1rem;
+    font-size: 1.1rem;
   }
-
 }
 
-
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 425px) {
+  .brandd-head,
+  .brandd-head-2 {
+      font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
   .brandd-head {
-      font-size: 2.7rem;
+      font-size: 2.45rem;
   }
-
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1440px) {
+  .brandd-head,
+  .brandd-head-2 {
+      font-size: 3.0rem;
+  }
+}
+@media only screen and (max-width: 2560px) {
+  .brandd-head,
+  .brandd-head-2 {
+      font-size: 4.5rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .brandd-head-2,
+  .brandd-head {
+      font-size: 2.3rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .brandd-head-2,
+  .brandd-head {
+      font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .brandd-head-2,
+  .brandd-head {
+      font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
   .brand-para {
-      font-size: 1.0rem;
+      font-size: 1.1rem;
   }
-
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1440px) {
   .brand-para {
-      font-size: 0.85rem;
+      font-size: 1.3rem;
   }
-
 }
-@media only screen and (max-width: 700px) {
-  .brand-para {
-      font-size: 1.9rem;
-  }
 
-}
 
 
 .main-brand-div {
@@ -544,4 +565,28 @@
 }
 
 
-/* border */
+.portfolio-btn,
+.products-btn {
+    width: 200px; /* Ancho deseado */
+}
+
+.hire-btn {
+  width: 240px; /* Ancho deseado */
+}
+/* Agrega estos estilos dentro de la media query para la resolución de 425px o menos */
+@media screen and (max-width: 425px) {
+  .btn-div {
+      flex-direction: column; /* Cambia la dirección del flexbox a columna */
+      align-items: center; /* Centra los elementos horizontalmente */
+  }
+
+  .portfolio-btn,
+  .products-btn {
+      width: 100%; /* Asegura que los botones ocupen todo el ancho disponible */
+      margin-bottom: 10px; /* Espacio entre los botones "Portfolio" y "Products" */
+  }
+
+  .hire-btn {
+      width: 100%; /* Asegura que el botón "Hire a freelancer" ocupe todo el ancho disponible */
+  }
+}
