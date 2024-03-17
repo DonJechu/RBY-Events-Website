@@ -129,3 +129,71 @@
   transform: scale(1.1); /* Ajusta el valor según la cantidad de zoom que desees */
 }
 
+.centered-title {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  margin-top: -0.25em;
+  font-size: 58px;
+  font-weight: 650;
+}
+@media only screen and (max-width: 320px) {
+  .centered-title {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin-top: -0.25em;
+    font-size: 38px;
+    font-weight: 650;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .centered-title {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin-top: -0.25em;
+    font-size: 42px;
+    font-weight: 650;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .centered-title {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin-top: -0.25em;
+    font-size: 46px;
+    font-weight: 650;
+  }
+}
+.centered-title2 {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  margin-top: 1em;
+  margin-bottom: -1em;
+  font-size: 58px;
+  font-weight: 650;
+}
+.separator {
+  width: 100%; /* Abarca el 80% del ancho horizontal */
+  height: 5px; /* Grosor del separador */
+  background-color: #999; /* Color del separador */
+  margin: 20px auto; /* Margen superior e inferior de 20px, centrado horizontalmente */
+}
