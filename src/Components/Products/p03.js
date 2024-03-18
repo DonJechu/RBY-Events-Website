@@ -91,6 +91,7 @@ function PageWithCover() {
                         <div className="d-flex">
                             <a href="http://discord.rby.events/" target="_blank" rel="noopener noreferrer">
                             <Button variant="secondary" className="down-buttons mr-2">Changelog</Button>
+                            <Button variant="secondary" className="down-buttons mr-2">Versions</Button>
                             </a>
                         </div>
                         <div className="tags-categories">
