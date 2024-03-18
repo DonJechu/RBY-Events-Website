@@ -18,7 +18,7 @@ function Service() {
                 <div className='head-service'><h1>Services</h1></div>
                 <div className=" row " >
 
-                    <div className=' service-div' data-aos="fade-up"  >
+                    <div className='service-div' data-aos="fade-up"  >
                         <div>
                             <TbSwords className='m-auto   icon' /></div>
                         <div>
@@ -27,16 +27,17 @@ function Service() {
 
                     </div>
 
-                    <div className=' service-div' data-aos="fade-up"  >
+                    <div className='service-div2' data-aos="fade-up"  >
                         <div>
                             <TbSwords className='m-auto   icon' /></div>
                         <div>
                             <p>3D Modeling </p>
+                            <h2 className='favorite'>Client Favorite</h2>
                         </div>
 
                     </div>
 
-                    <div className=' service-div' data-aos="fade-up" >
+                    <div className='service-div' data-aos="fade-up" >
                         <div>
                             <TbSwords className='m-auto   icon' /></div>
                         <div>
@@ -45,7 +46,7 @@ function Service() {
 
                     </div>
 
-                    <div className=' service-div' data-aos="fade-up"  >
+                    <div className='service-div' data-aos="fade-up"  >
                         <div>
                             <TbSwords className='m-auto   icon' /></div>
                         <div>
@@ -54,7 +55,7 @@ function Service() {
 
                     </div>
 
-                    <div className=' service-div' data-aos="fade-up" >
+                    <div className='service-div' data-aos="fade-up" >
                         <div>
                             <TbSwords className='m-auto   icon' /></div>
                         <div>
@@ -63,7 +64,7 @@ function Service() {
 
                     </div>
 
-                    <div className=' service-div' data-aos="fade-up"  >
+                    <div className='service-div' data-aos="fade-up"  >
                         <div>
                             <TbSwords className='m-auto   icon' /></div>
                         <div>
@@ -72,7 +73,7 @@ function Service() {
 
                     </div>
 
-                    <div className=' service-div' data-aos="fade-up" >
+                    <div className='service-div' data-aos="fade-up" >
                         <div>
                             <TbSwords className='m-auto   icon' /></div>
                         <div>
@@ -81,7 +82,7 @@ function Service() {
 
                     </div>
 
-                    <div className=' service-div' data-aos="fade-up">
+                    <div className='service-div' data-aos="fade-up">
                         <div>
                             <TbSwords className='m-auto   icon' /></div>
                         <div>
@@ -90,7 +91,7 @@ function Service() {
 
                     </div>
 
-                    <div className=' service-div' data-aos="fade-up" >
+                    <div className='service-div' data-aos="fade-up" >
                         <div>
                             <TbSwords className='m-auto   icon' /></div>
                         <div>
