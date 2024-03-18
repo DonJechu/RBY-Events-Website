@@ -1,4 +1,3 @@
-// index.js
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -43,8 +42,10 @@ function ResumeNew() {
                     className="product-image"
                   />
                   <div className="product-name">Lanterns Enhanced</div>
+                  <h1 className="mid-info">Makes Lanterns, Chains and Torches 3D in your hand!</h1>
                   <div className="product-info">
-                    <div className="left-info">Byjechu</div>
+                    <div className="left-info">Byjechu
+                    </div>
                     <div className="right-info">
                       {width >= 375 && <div className="new-badge">New🆕</div>}
                     </div>
@@ -63,8 +64,10 @@ function ResumeNew() {
                     className="product-image"
                   />
                   <div className="product-name">RBY's Clean Hud</div>
+                  <h1 className="mid-info">Makes Lanterns, Chains and Torches 3D in your hand!</h1>
                   <div className="product-info">
-                    <div className="left-info">Byjechu</div>
+                    <div className="left-info">Byjechu
+                    </div>
                     <div className="right-info">
                       {width >= 375 && <div className="new-badge">New🆕</div>}
                     </div>
@@ -88,6 +91,7 @@ function ResumeNew() {
                     className="product-image"
                   />
                   <div className="product-name">RBY Rings</div>
+                  <h1 className="mid-info">Makes Lanterns, Chains and Torches 3D in your hand!</h1>
                   <div className="product-info">
                     <div className="left-info">Byjechu</div>
                     <div className="right-info">
@@ -108,8 +112,10 @@ function ResumeNew() {
                     className="product-image"
                   />
                   <div className="product-name">Lanterns Enhanced</div>
+                  <h1 className="mid-info">Makes Lanterns, Chains and Torches 3D in your hand!</h1>
                   <div className="product-info">
-                    <div className="left-info">Byjechu</div>
+                    <div className="left-info">Byjechu
+                    </div>
                     <div className="right-info">
                       {width >= 375 && <div className="new-badge">New🆕</div>}
                     </div>
