@@ -64,7 +64,7 @@ function ResumeNew() {
                     className="product-image"
                   />
                   <div className="product-name">RBY's Clean Hud</div>
-                  <h1 className="mid-info">Makes Lanterns, Chains and Torches 3D in your hand!</h1>
+                  <h1 className="mid-info">A new level of minimalism for your Minecraft HUD/Hotbar.</h1>
                   <div className="product-info">
                     <div className="left-info">Byjechu
                     </div>
@@ -91,7 +91,7 @@ function ResumeNew() {
                     className="product-image"
                   />
                   <div className="product-name">RBY Rings</div>
-                  <h1 className="mid-info">Makes Lanterns, Chains and Torches 3D in your hand!</h1>
+                  <h1 className="mid-info">Make powerful RINGS that grant special abilities to you.</h1>
                   <div className="product-info">
                     <div className="left-info">Byjechu</div>
                     <div className="right-info">
