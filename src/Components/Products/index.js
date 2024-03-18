@@ -96,7 +96,7 @@ function ResumeNew() {
                   <div className="product-info">
                     <div className="left-info">Byjechu</div>
                     <div className="right-info">
-                      {width >= 375 && <div className="new-badge">Soon🔜</div>}
+                      {width >= 375 && <div className="new-badge">New🆕</div>}
                     </div>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ function ResumeNew() {
                     <div className="left-info">Coming Soon
                     </div>
                     <div className="right-info">
-                      {width >= 375 && <div className="new-badge">New🆕</div>}
+                      {width >= 375 && <div className="new-badge">Soon🔜</div>}
                     </div>
                   </div>
                 </div>
