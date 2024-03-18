@@ -69,7 +69,7 @@
 
 .left-info {
   align-self: flex-end; /* Alinea "Byjechu" a la izquierda */
-  font-size: 0.75em; /* Tamaño de fuente más pequeño */
+  font-size: 0.5em; /* Tamaño de fuente más pequeño */
   font-weight: 600;
   color: #FC544A; /* Color rojo personalizado */
 }
