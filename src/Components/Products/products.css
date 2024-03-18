@@ -1,6 +1,12 @@
 .description {
-  font-size: 14px; /* Tamaño de fuente más pequeño */
+  font-size: 16px; /* Tamaño de fuente más pequeño */
   margin-top: 10px; /* Espaciado superior */
+}
+@media only screen and (max-width: 425px) {
+  .description {
+    font-size: 12px; /* Tamaño de fuente más pequeño */
+    width: 95%; /* Ancho del botón al 100% del contenedor */
+    }
 }
 
 .title {
@@ -30,6 +36,7 @@
   justify-content: space-between; /* Distribuye las imágenes de manera uniforme en el contenedor */
   margin-top: 20px; /* Ajusta el valor según sea necesario */
 }
+
 
 .additional-image {
   width: 100px; /* Ajusta el tamaño de las imágenes adicionales según sea necesario */
@@ -123,6 +130,8 @@
 .d-flex .down-buttons:last-child {
   margin-left: 20px;
 }
+
+
 
 @media only screen and (max-width: 768px) {
   .content-column {
