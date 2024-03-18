@@ -81,6 +81,7 @@
   align-self: flex-start; 
   font-size: 0.6em; /* Tamaño de fuente más pequeño */
   margin-top: 0.5em;
+  margin-bottom: 0.6em;
 }
 
 .right-info {
