@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FaPlus, FaMinus } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import coverImage from "../../assests/products/3.png";
 import image1 from "../../assests/products/3.png";
 import image2 from "../../assests/products/03/1.png";
@@ -87,7 +88,11 @@ function PageWithCover() {
                         <a href="https://cdn.modrinth.com/data/PrX8VuaM/versions/9p7O2IH8/RBY%20Rings%20%28EXTRACT%29.zip" download>
                             <Button variant="primary" className="download-button">Download Product</Button>
                         </a>
-
+                        <div className="d-flex">
+                            <Link to='http://discord.rby.events/'>
+                            <Button variant="secondary" className="down-buttons mr-2">Changelog</Button>
+                            </Link>
+                        </div>
                         <div className="tags-categories">
                             <hr className="separator" />
                             <Button variant="link" className={`tags-categories-button ${showTags ? 'active' : ''}`} onClick={toggleTags}>
