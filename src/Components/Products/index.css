@@ -68,11 +68,21 @@
 }
 
 .left-info {
+  position: relative;
   align-self: flex-end; /* Alinea "Byjechu" a la izquierda */
+  margin-right: 12em;
   font-size: 0.5em; /* Tamaño de fuente más pequeño */
   font-weight: 600;
   color: #FC544A; /* Color rojo personalizado */
 }
+.mid-info {
+  position: relative;
+  text-align: left;
+  align-self: flex-start; 
+  font-size: 0.6em; /* Tamaño de fuente más pequeño */
+  margin-top: 0.5em;
+}
+
 .right-info {
   align-self: flex-start; /* Alinea "Byjechu" a la izquierda */
 }
