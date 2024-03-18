@@ -45,7 +45,7 @@ function ResumeNew() {
                   <div className="product-name">Lanterns Enhanced</div>
                   <h1 className="mid-info">Makes <strong>Lanterns</strong>, <strong>Chains</strong> and <strong>Torches 3D</strong> in your hand!</h1>
                   <div className="product-info">
-                    <div className="left-info">Byjechu
+                    <div className="left-info">ResourcePack
                     </div>
                     <div className="right-info">
                       {width >= 375 && <div className="new-badge">New🆕</div>}
@@ -67,7 +67,7 @@ function ResumeNew() {
                   <div className="product-name">RBY's Clean Hud</div>
                   <h1 className="mid-info">A new level of <strong>minimalism</strong> for your Minecraft <strong>HUD/Hotbar</strong>.</h1>
                   <div className="product-info">
-                    <div className="left-info">Byjechu
+                    <div className="left-info">ResourcePack
                     </div>
                     <div className="right-info">
                       {width >= 375 && <div className="new-badge">New🆕</div>}
@@ -94,7 +94,7 @@ function ResumeNew() {
                   <div className="product-name">RBY Rings</div>
                   <h1 className="mid-info">Make <strong>powerful RINGS</strong> that grant special <strong>abilities</strong> to you.</h1>
                   <div className="product-info">
-                    <div className="left-info">Byjechu</div>
+                    <div className="left-info">DataPack</div>
                     <div className="right-info">
                       {width >= 375 && <div className="new-badge">New🆕</div>}
                     </div>
