@@ -47,36 +47,32 @@ function Statistics() {
             <div className="main-statistics">
                 <div style={{ display: 'flex', justifyContent: 'center' }} className='views-div'>
                     <div className="filled-text">+{counter1}M
-                        <p>Views on Youtube</p>
+                        <h3 className='stats-text'>Views on Youtube</h3>
                     </div>
                     <div className="filled-text">+{counter2}
-                        <p>Satisfied customers</p>
+                        <h3 className='stats-text'>Satisfied customers</h3>
                     </div>
                     <div className="filled-text">+{counter3}M
-                        <p>Likes on YouTube</p>
+                        <h3 className='stats-text'>Likes on YouTube</h3>
                     </div>
                     <div className="filled-text">+{counter4}k
-                        <p>Watch-time Hours </p>
+                        <h3 className='stats-text'>Watch-time Hours </h3>
                     </div>
                 </div>
                 <div className="outlined-text">We've Generated</div>
 
 
-                <div className='text-btn-div '
-                    data-aos="fade-up" duration='2000'>
-                    <div className='text-div'>
+                <div className="text-btn-div" data-aos="fade-up" duration="2000">
+                    <div className="text-div">
                         <h2>Ready To Start? </h2>
                     </div>
-                        <a href="http://discord.rby.events/" target="_blank" rel="noopener noreferrer" className='btn-div'>
-                            <button className='ready-to-start'>
-                                <p>Let's chat</p>
-                                <AiOutlineRight className='left-icon' />
-                            </button>
-                        </a>
-
-                </div>
-
-
+                    <div className="btn-div">
+                        <button className="ready-to-start">
+                        <h3 className='ready-letter'>Let's chat</h3>
+                        <AiOutlineRight className="left-icon" />
+                        </button>
+                    </div>
+                    </div>
 
             </div>
 
