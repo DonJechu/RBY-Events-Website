@@ -28,27 +28,25 @@ const Navbar = () => {
                         <li>
                             {/* Ajusta las rutas según tus necesidades */}
                             <NavLink to="/" onClick={handleShowNavbar}>
-                                Home
+                                <span className="nav-item">Home</span>
                             </NavLink>
                         </li>
                         <li>
                             {/* Utilizamos href con el identificador de la sección */}
                             <a href="#service" onClick={handleShowNavbar}>
-                                Services
+                                <span className="nav-item">Services</span>
                             </a>
                         </li>
                         <li>
                             <NavLink to="/portfolio" onClick={handleShowNavbar}>
-                                Portfolio
+                                <span className="nav-item">Portfolio</span>
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/products
-                            " onClick={handleShowNavbar}>
-                                Products
+                            <NavLink to="/products" onClick={handleShowNavbar}>
+                                <span className="nav-item">Products</span>
                             </NavLink>
                         </li>
-
                     </ul>
                 </div>
             </div>
