@@ -87,10 +87,6 @@ function PageWithCover() {
                         <a href="https://cdn.modrinth.com/data/PrX8VuaM/versions/9p7O2IH8/RBY%20Rings%20%28EXTRACT%29.zip" download>
                             <Button variant="primary" className="download-button">Download Product</Button>
                         </a>
-                        <div className="d-flex">
-                            <Button variant="secondary" className="down-buttons mr-2">Changelog</Button>
-                            <Button variant="secondary" className="down-buttons">Versions</Button>
-                        </div>
 
                         <div className="tags-categories">
                             <hr className="separator" />
