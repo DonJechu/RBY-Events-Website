@@ -40,7 +40,7 @@ function Work() {
                     </div>
                 </div>
                 <div className="work-btn-div">
-                <Link to='/products'>
+                <Link to='/portfolio'>
                     <button className=' work-btn'>
                         <h3 className='portfolio'>Portfolio</h3>
                         <AiOutlineRight className='left-icon' />
