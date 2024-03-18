@@ -4,6 +4,7 @@ import work from '../../assests/work.png'
 import work2 from '../../assests/work2.jpg'
 import work3 from '../../assests/portfolio9.png'
 import work4 from '../../assests/work4.png'
+import { Link } from 'react-router-dom';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import the AOS styles
@@ -39,10 +40,12 @@ function Work() {
                     </div>
                 </div>
                 <div className="work-btn-div">
+                <Link to='/products'>
                     <button className=' work-btn'>
-                        <p>Portfolio</p>
+                        <h3 className='portfolio'>Portfolio</h3>
                         <AiOutlineRight className='left-icon' />
                     </button>
+                </Link>
                 </div>
             </div>
             </section>
