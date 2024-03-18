@@ -20,20 +20,20 @@ function Statistics() {
 
     useEffect(() => {
         const interval1 = setInterval(() => {
-            setCounter1((prevCounter) => (prevCounter < 50 ? prevCounter + 5 : 50));
-        }, 100);
+            setCounter1((prevCounter) => (prevCounter < 50 ? prevCounter + 1 : 50));
+        }, 50);
 
         const interval2 = setInterval(() => {
-            setCounter2((prevCounter) => (prevCounter < 30 ? prevCounter + 5 : 30));
-        }, 150);
+            setCounter2((prevCounter) => (prevCounter < 30 ? prevCounter + 1 : 30));
+        }, 65);
 
         const interval3 = setInterval(() => {
-            setCounter3((prevCounter) => (prevCounter < 1 ? prevCounter + 5 : 1));
-        }, 200);
+            setCounter3((prevCounter) => (prevCounter < 1 ? prevCounter + 1 : 1));
+        }, 100);
 
         const interval4 = setInterval(() => {
-            setCounter4((prevCounter) => (prevCounter < 800 ? prevCounter + 85 : 800));
-        },120);
+            setCounter4((prevCounter) => (prevCounter < 800 ? prevCounter + 17 : 800));
+        },80);
 
         return () => {
             clearInterval(interval1);
