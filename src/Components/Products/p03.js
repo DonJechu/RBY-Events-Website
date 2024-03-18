@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FaPlus, FaMinus } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 import coverImage from "../../assests/products/3.png";
 import image1 from "../../assests/products/3.png";
 import image2 from "../../assests/products/03/1.png";
@@ -9,12 +8,22 @@ import image3 from "../../assests/products/03/2.png";
 import image4 from "../../assests/products/03/3.png";
 import Footer from '../Footer/footer';
 import './products.css';
+import { useParams } from 'react-router-dom';
 
 function PageWithCover() {
     const [mainImage, setMainImage] = useState(coverImage);
     const [selectedImage, setSelectedImage] = useState(image1);
     const [showTags, setShowTags] = useState(false);
     const [showCategories, setShowCategories] = useState(false);
+
+    const { id } = useParams();
+
+    useEffect(() => {
+        if (id === '03') {
+            setMainImage(image1);
+            setSelectedImage(image1);
+        }
+    }, [id]);
 
     const handleImageClick = (image) => {
         setMainImage(image);
@@ -75,7 +84,7 @@ function PageWithCover() {
                     <Col xs={12} md={6} className="content-column align-self-start">
                         <h1 className="title mb-4">RBY Rings</h1>
                         <p className="description mb-4">
-                        Create <strong>Powerful RINGS</strong> That Grant <strong>Special</strong> Abilities To <strong>YOU</strong>.
+                            Create <strong>Powerful RINGS</strong> That Grant <strong>Special</strong> Abilities To <strong>YOU</strong>.
                         </p>
                         <p className="description mb-0">
                             <strong>The pack includes:</strong>
@@ -89,11 +98,10 @@ function PageWithCover() {
                             <Button variant="primary" className="download-button">Download Product</Button>
                         </a>
                         <div className="d-flex">
-                            <a href="http://discord.rby.events/" target="_blank" rel="noopener noreferrer">
                             <Button variant="secondary" className="down-buttons mr-2">Changelog</Button>
                             <Button variant="secondary" className="down-buttons">Versions</Button>
-                            </a>
                         </div>
+
                         <div className="tags-categories">
                             <hr className="separator" />
                             <Button variant="link" className={`tags-categories-button ${showTags ? 'active' : ''}`} onClick={toggleTags}>
