@@ -123,18 +123,22 @@
 .work-btn:hover p {
     
     left: 0.8em;
-    color: #FC544A
+    color: #FC544A;
+    margin-bottom: 1em;
+
 }
 
 .work-btn:hover .left-icon {
     
     opacity: 1;
     color: #FC544A;
+
 }
 
 .work-btn:hover {
     
     background-color: #FFF;
+    color: #FC544A;
 }
 
 
@@ -151,6 +155,7 @@
 
 .grid-container img:hover {
     transform: scale(1.1); /* Un pequeño aumento de escala al pasar el ratón para un efecto adicional */
+    color: #FC544A;
 }
 
 .image-overlay {
@@ -161,12 +166,27 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.3); /* Ajusta la opacidad y el color según tus preferencias */
     transition: background 0.3s ease-in-out; /* Añade una transición para suavizar el cambio */
+
 }
 
 .grid-container div:hover .image-overlay {
     background: rgba(0, 0, 0, 0); /* Al pasar el ratón, la opacidad se reduce a 0 */
+    color: #FC544A;
 }
 
 .grid-container div:hover img {
     transform: scale(1.1); /* Un pequeño aumento de escala al pasar el ratón */
+    color: #FC544A;
+}
+
+.portfolio {
+    color: white;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+}
+
+.portfolio:hover {
+    color: #FC544A;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
 }
