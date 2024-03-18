@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './statistics.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import the AOS styles
+import { Link } from 'react-router-dom';
 
 import { AiOutlineRight } from "react-icons/ai";
 import Work from '../Work/work';
@@ -67,10 +68,12 @@ function Statistics() {
                         <h2>Ready To Start? </h2>
                     </div>
                     <div className="btn-div">
+                    <a href="http://discord.rby.events/" target="_blank" rel="noopener noreferrer">
                         <button className="ready-to-start">
                         <h3 className='ready-letter'>Let's chat</h3>
                         <AiOutlineRight className="left-icon" />
                         </button>
+                    </a>
                     </div>
                     </div>
 
