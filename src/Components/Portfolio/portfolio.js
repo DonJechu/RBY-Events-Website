@@ -17,17 +17,27 @@ import srvportfolio7 from '../../assests/portfolio/emote2-rbyserver.gif';
 import srvportfolio85 from '../../assests/portfolio/hats-rbyserver.png';
 import srvportfolio1 from '../../assests/portfolio/globes-rbyserver.gif';
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Container, Row } from "react-bootstrap";
 import './ResumeNew.css'; // Importa tu archivo CSS
 import Footer from '../Footer/footer';
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
+  const serverSectionRef = useRef(null);
 
   useEffect(() => {
     setWidth(window.innerWidth);
+    scrollToHash();
   }, []);
+
+  // Función para hacer scroll a la sección con el identificador correspondiente al hash en la URL
+  const scrollToHash = () => {
+    if (window.location.hash === "#server" && serverSectionRef.current) {
+      serverSectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
 
   return (
     <>
@@ -131,8 +141,9 @@ function ResumeNew() {
           </Row>
 
 {/* SERVERS DEVELOPMENT PORTFOLIO */}
-          <div>
-        <Container fluid className="resume-section">
+        <div ref={serverSectionRef}>
+          <Container fluid className="resume-section">
+            {/* Agregamos una línea horizontal como separador */}
         {/* Agregamos una línea horizontal como separador */}
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <div style={{ width: '80%', margin: '6em auto' }}>
