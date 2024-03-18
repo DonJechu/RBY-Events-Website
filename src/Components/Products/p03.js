@@ -89,9 +89,9 @@ function PageWithCover() {
                             <Button variant="primary" className="download-button">Download Product</Button>
                         </a>
                         <div className="d-flex">
-                            <Link to='http://discord.rby.events/'>
+                            <a href="http://discord.rby.events/" target="_blank" rel="noopener noreferrer">
                             <Button variant="secondary" className="down-buttons mr-2">Changelog</Button>
-                            </Link>
+                            </a>
                         </div>
                         <div className="tags-categories">
                             <hr className="separator" />
