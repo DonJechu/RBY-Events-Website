@@ -434,13 +434,18 @@
         font-size: 1.5em;
         border-radius: 0.6em;
         left: 0.2em;
-        
+        font-size: 1.2em;
+        margin-right: 2em;
     }
 }
 .ready-letter{
     color: #FFF;
 }
-
+@media only screen and (max-width: 320px) {
+    .ready-letter{
+        font-size: 1em;
+    }
+}
   .ready-to-start p {
     position: absolute;
     
