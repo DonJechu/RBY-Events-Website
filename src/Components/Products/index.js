@@ -7,6 +7,7 @@ import Footer from '../Footer/footer';
 import portfolio1 from '../../assests/products/1.png';
 import portfolio2 from '../../assests/products/2.png';
 import portfolio3 from '../../assests/products/3.png';
+import coming_soon from '../../assests/products/coming-soon.png'
 
 function ResumeNew() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -42,7 +43,7 @@ function ResumeNew() {
                     className="product-image"
                   />
                   <div className="product-name">Lanterns Enhanced</div>
-                  <h1 className="mid-info">Makes Lanterns, Chains and Torches 3D in your hand!</h1>
+                  <h1 className="mid-info">Makes <strong>Lanterns</strong>, <strong>Chains</strong> and <strong>Torches 3D</strong> in your hand!</h1>
                   <div className="product-info">
                     <div className="left-info">Byjechu
                     </div>
@@ -64,7 +65,7 @@ function ResumeNew() {
                     className="product-image"
                   />
                   <div className="product-name">RBY's Clean Hud</div>
-                  <h1 className="mid-info">A new level of minimalism for your Minecraft HUD/Hotbar.</h1>
+                  <h1 className="mid-info">A new level of <strong>minimalism</strong> for your Minecraft <strong>HUD/Hotbar</strong>.</h1>
                   <div className="product-info">
                     <div className="left-info">Byjechu
                     </div>
@@ -91,11 +92,11 @@ function ResumeNew() {
                     className="product-image"
                   />
                   <div className="product-name">RBY Rings</div>
-                  <h1 className="mid-info">Make powerful RINGS that grant special abilities to you.</h1>
+                  <h1 className="mid-info">Make <strong>powerful RINGS</strong> that grant special <strong>abilities</strong> to you.</h1>
                   <div className="product-info">
                     <div className="left-info">Byjechu</div>
                     <div className="right-info">
-                      {width >= 375 && <div className="new-badge">New🆕</div>}
+                      {width >= 375 && <div className="new-badge">Soon🔜</div>}
                     </div>
                   </div>
                 </div>
@@ -107,14 +108,14 @@ function ResumeNew() {
               <Link to="/products/01" className="product-link">
                 <div className="product-container">
                   <img
-                    src={portfolio1}
+                    src={coming_soon}
                     alt="Portfolio1"
                     className="product-image"
                   />
-                  <div className="product-name">Lanterns Enhanced</div>
-                  <h1 className="mid-info">Makes Lanterns, Chains and Torches 3D in your hand!</h1>
+                  <div className="product-name">Coming Soom</div>
+                  <h1 className="mid-info">Coming Soon</h1>
                   <div className="product-info">
-                    <div className="left-info">Byjechu
+                    <div className="left-info">Coming Soon
                     </div>
                     <div className="right-info">
                       {width >= 375 && <div className="new-badge">New🆕</div>}
