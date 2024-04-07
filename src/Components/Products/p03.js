@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { Helmet } from 'react-helmet';
 import { FaPlus, FaMinus } from 'react-icons/fa';
 import coverImage from "../../assests/products/3.png";
 import image1 from "../../assests/products/3.png";
@@ -42,6 +43,14 @@ function PageWithCover() {
 
     return (
         <>
+            <Helmet>
+                <title>RBY Rings</title>
+                <meta property="og:title" content="RBY Rings" />
+                <meta property="og:description" content="Make powerful RINGS that grant special abilities to you." />
+                <meta property="og:image" content={coverImage} />
+                {/* Agrega otras metaetiquetas que desees para esta página */}
+            </Helmet>
+
             <Container fluid className="page-container">
                 <Row>
                     <Col xs={12} md={4} className="image-column align-self-start">
