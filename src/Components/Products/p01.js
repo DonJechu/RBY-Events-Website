@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from 'react-helmet';
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FaPlus, FaMinus } from 'react-icons/fa';
 import coverImage from "../../assests/products/1.png";
@@ -32,6 +33,13 @@ function PageWithCover() {
 
     return (
         <>
+            <Helmet>
+                <title>Lanterns Enhanced</title>
+                <meta property="og:title" content="Lanterns Enhanced" />
+                <meta property="og:description" content="Descripción de Lanterns Enhanced" />
+                <meta property="og:image" content={coverImage} />
+                {/* Agrega otras metaetiquetas que desees para esta página */}
+            </Helmet>
             <Container fluid className="page-container">
                 <Row>
                     <Col xs={12} md={4} className="image-column align-self-start">
@@ -73,13 +81,13 @@ function PageWithCover() {
                     </Col>
                     <Col xs={12} md={6} className="content-column align-self-start">
                         <h1 className="title mb-4">Lanterns Enhanced</h1>
-                        <p className="description mb-4">
+                        <h3 className="description mb-4">
                             Lanterns Enhanced transforms <strong>Lanterns</strong>, <strong>Torches</strong> and <strong>Chains</strong>
                             with revamped <strong>3D models</strong>, providing them with a fresh appearance. Moreover, it refines the <strong>
                             third-person holding</strong> view for lanterns and torches, offering a more <strong>aesthetically</strong>
                             pleasing and slightly realistic portrayal.
-                        </p>
-                        <p className="description mb-0">
+                        </h3>
+                        <h3 className="description mb-4">
                             <strong>The pack includes:</strong>
                             <ul className="custom-list">
                                 <li>3D Lanterns</li>
@@ -87,10 +95,14 @@ function PageWithCover() {
                                 <li>3D Chains</li>
                                 <li>Third-Person Holding</li>
                             </ul>
-                        </p>
+                        </h3>
                         <a href="https://cdn.modrinth.com/data/FZ2oFlqL/versions/gJpc7dfr/Lanterns%2BEnhanced%20v1.0.1.zip" download>
                             <Button variant="primary" className="download-button">Download Product</Button>
                         </a>
+                        <div className="d-flex">
+                            <Button variant="secondary" className="down-buttons mr-2">Changelog</Button>
+                            <Button variant="secondary" className="down-buttons">Versions</Button>
+                        </div>
 
                         <div className="tags-categories">
                             <hr className="separator" />
@@ -112,6 +124,7 @@ function PageWithCover() {
                             </Button>
                             {showCategories && (
                                 <div className={`category-list ${showCategories ? 'active' : ''}`}>
+                                    <div className="category">Resource Pack</div>
                                     <div className="category">Gui</div>
                                     <div className="category">Models</div>
                                 </div>
