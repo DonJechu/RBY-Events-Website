@@ -18,19 +18,13 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>RBY Events</title>
+    <!-- Agregar las metaetiquetas Open Graph -->
+    <meta property="og:title" content="Título de la Página Principal" />
+    <meta property="og:description" content="Descripción de la Página Principal" />
+    <meta property="og:image" content="%PUBLIC_URL%/logo.png" /> <!-- Cambiar la URL de la imagen por la del logo -->
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <script>
-      var currentUrl = window.location.href;
-      if (currentUrl === 'https://www.rby.events/products/03') {
-        document.getElementById('root').innerHTML = `
-          <h1>Producto 03</h1>
-          <img src="src/assets/products/1.png" alt="Product 03" />
-          <p>Descripción del producto 03...</p>
-        `;
-      }
-    </script>
   </body>
 </html>
