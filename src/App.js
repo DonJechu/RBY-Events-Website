@@ -22,8 +22,8 @@ function App() {
     <>
       <div>
       <Helmet>
-          <meta property="og:title" content="Título de la Página Principal" />
-          <meta property="og:description" content="Descripción de la Página Principal" />
+          <meta property="og:title" content="RBY Events" />
+          <meta property="og:description" content="Organizing projects that leave people wondering, 'How'd they do that?'" />
           <meta property="og:image" content={Logo} /> {/* Utiliza la variable Logo como contenido de la metaetiqueta */}
           {/* Agrega otras metaetiquetas que desees para la página principal */}
         </Helmet>
