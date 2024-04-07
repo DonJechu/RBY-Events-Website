@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 
 import './index.css'; // Importa tu archivo CSS
-import Logo from './assests/logo.png';
+import Logo from '../../assests/logo.png';
 import Footer from '../Footer/footer';
 import portfolio1 from '../../assests/products/1.png';
 import portfolio2 from '../../assests/products/2.png';
