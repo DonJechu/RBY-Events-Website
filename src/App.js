@@ -11,7 +11,7 @@ import { Routes, Route, Navigate } from 'react-router-dom'; // Agrega Navigate
 import Portfolio from './Components/Portfolio/portfolio.js';
 import NotFoundPage from './Components/NotFoundPage/404.js';
 
-import Logo from './assests/logo.png'
+import Logo from './assests/logo.png';
 import Products from './Components/Products/index.js';
 import Products01 from './Components/Products/p01.js';
 import Products02 from './Components/Products/p02.js';
