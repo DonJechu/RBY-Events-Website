@@ -81,7 +81,7 @@ function PageWithCover() {
                         </div>
                     </Col>
                     <Col xs={12} md={6} className="content-column align-self-start">
-                        <h1 className="title mb-4">Lanterns Enhanced</h1>
+                        <h1 className="title mb-4">RBY's Clean Hud</h1>
                         <p className="description mb-4">
                         A new level of minimalism for your Minecraft HUD/Hotbar. Organize your inventory with sleek numbers 
                         and enjoy a distraction-free gaming experience with a clean, modern interface. Get ready to dive into 
