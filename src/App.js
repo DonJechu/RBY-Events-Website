@@ -1,3 +1,6 @@
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import Brands from './Components/Brands/brands';
 import HeroSection from './Components/Hero/hero';
@@ -6,10 +9,8 @@ import Service from './Components/Services/services';
 import Statistics from './Components/Statistics/statistics';
 import Footer from './Components/Footer/footer.jsx';
 import { Analytics } from '@vercel/analytics/react';
-import { Routes, Route, Navigate } from 'react-router-dom'; // Agrega Navigate
 import Portfolio from './Components/Portfolio/portfolio.js';
 import NotFoundPage from './Components/NotFoundPage/404.js';
-
 import Products from './Components/Products/index.js';
 import Products01 from './Components/Products/p01.js';
 import Products02 from './Components/Products/p02.js';
@@ -19,6 +20,13 @@ function App() {
   return (
     <>
       <div>
+        <Helmet>
+          <meta property="og:title" content="Título de la Página Principal" />
+          <meta property="og:description" content="Descripción de la Página Principal" />
+          <meta property="og:image" content="URL de la Imagen Principal" />
+          {/* Agrega otras metaetiquetas que desees para la página principal */}
+        </Helmet>
+        
         <Navbar />
         <Routes>
           <Route path='/' element={<HeroSection />} />
@@ -27,20 +35,15 @@ function App() {
           <Route path='/portfolio/server' element={<Portfolio />} />
           <Route path='/portfolio/3d' element={<Portfolio />} />
 
-          {/* Cambia '/product' a '/products' */}
           <Route path='/products' element={<Products />} />
-          <Route path='/products/*' element={<Navigate to="/products" />} /> {/* Redirige cualquier número no registrado a /products */}
+          <Route path='/products/*' element={<Navigate to="/products" />} />
 
           <Route path='/products/01' element={<Products01 />} />
           <Route path='/products/1' element={<Products01 />} />
-
           <Route path='/products/02' element={<Products02 />} />
           <Route path='/products/2' element={<Products02 />} />
-
           <Route path='/products/03' element={<Products03 />} />
           <Route path='/products/3' element={<Products03 />} />
-
-          {/* Agrega la ruta NotFoundPage */}
           <Route path='*' element={<NotFoundPage />} />
         </Routes>
         <Analytics />
