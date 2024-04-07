@@ -36,7 +36,7 @@ function PageWithCover() {
             <Helmet>
                 <title>Lanterns Enhanced</title>
                 <meta property="og:title" content="Lanterns Enhanced" />
-                <meta property="og:description" content="Descripción de Lanterns Enhanced" />
+                <meta property="og:description" content="Makes Lanterns, Chains and Torches 3D in your hand!" />
                 <meta property="og:image" content={coverImage} />
                 {/* Agrega otras metaetiquetas que desees para esta página */}
             </Helmet>
