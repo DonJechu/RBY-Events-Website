@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 
 import './index.css'; // Importa tu archivo CSS
+import Logo from './assests/logo.png';
 import Footer from '../Footer/footer';
 import portfolio1 from '../../assests/products/1.png';
 import portfolio2 from '../../assests/products/2.png';
@@ -26,6 +28,13 @@ function ResumeNew() {
 
   return (
     <>
+      <Helmet>
+          <title>Lanterns Enhanced</title>
+          <meta property="og:title" content="RBY Events" />
+          <meta property="og:description" content="Search and browse for Datapacks, Resourcepack, Maps on RBY with instant, accurate search results" />
+          <meta property="og:image" content={Logo} />
+          {/* Agrega otras metaetiquetas que desees para esta página */}
+          </Helmet>
       <div>
         <Container fluid className="resume-section">
           <Row style={{ justifyContent: "center" }}>
