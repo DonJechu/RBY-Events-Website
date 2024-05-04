@@ -58,7 +58,7 @@ function ResumeNew() {
                     <div className="left-info">ResourcePack
                     </div>
                     <div className="right-info">
-                      {width >= 375 && <div className="new-badge">New🆕</div>}
+                      {width >= 375 && <div className="new-badge">Popular🔥</div>}
                     </div>
                   </div>
                 </div>
@@ -78,9 +78,6 @@ function ResumeNew() {
                   <h1 className="mid-info">A new level of <strong>minimalism</strong> for your Minecraft <strong>HUD/Hotbar</strong>.</h1>
                   <div className="product-info">
                     <div className="left-info">ResourcePack
-                    </div>
-                    <div className="right-info">
-                      {width >= 375 && <div className="new-badge">New🆕</div>}
                     </div>
                   </div>
                 </div>
