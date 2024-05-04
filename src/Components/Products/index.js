@@ -9,6 +9,7 @@ import Footer from '../Footer/footer';
 import portfolio1 from '../../assests/products/1.png';
 import portfolio2 from '../../assests/products/2.png';
 import portfolio3 from '../../assests/products/3.png';
+import portfolio4 from '../../assests/products/4.png';
 import coming_soon from '../../assests/products/coming-soon.png'
 
 function ResumeNew() {
@@ -114,20 +115,19 @@ function ResumeNew() {
 
             {/* Producto 4 */}
             <Col xs={12} sm={6} md={4} lg={3} className="product-column">
-              <Link to="/products/01" className="product-link">
+              <Link to="/products/04" className="product-link">
                 <div className="product-container">
                   <img
-                    src={coming_soon}
-                    alt="Portfolio1"
+                    src={portfolio4}
+                    alt="portfolio4"
                     className="product-image"
                   />
-                  <div className="product-name">Coming Soom</div>
-                  <h1 className="mid-info">Coming Soon</h1>
+                  <div className="product-name">RBY's TNT</div>
+                  <h1 className="mid-info">Destroy <strong>ANYTHING</strong></h1>
                   <div className="product-info">
-                    <div className="left-info">Coming Soon
-                    </div>
+                    <div className="left-info">DataPack</div>
                     <div className="right-info">
-                      {width >= 375 && <div className="new-badge">Soon🔜</div>}
+                      {width >= 375 && <div className="new-badge">New🆕</div>}
                     </div>
                   </div>
                 </div>
