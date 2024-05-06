@@ -8,6 +8,7 @@ import portfolio7 from '../../assests/portfolio7.png';
 import portfolio8 from '../../assests/portfolio8.png';
 import portfolio85 from '../../assests/portfolio8-5.png';
 import portfolio1 from '../../assests/portfolio9.png';
+import portfolio10 from '../../assests/portfolio10.png';
 
 import srvportfolio9 from '../../assests/portfolio/tab-rbyserver.png';
 import srvportfolio2 from '../../assests/portfolio/crate-rbyserver.png';
@@ -136,9 +137,29 @@ function ResumeNew() {
               />
             </div>
           </Row>
+          <Row className="resume justify-content-center align-items-center">
+          <div className="center-image left-image">
+              <img
+                src={portfolio10}
+                alt="Sexta Imagen"
+                className="zoom-image"
+              />
+            </div>
+          
+          </Row>
 
           <Row style={{ justifyContent: "center", position: "relative" }}>
           </Row>
+
+
+
+
+
+
+
+
+
+
 
 {/* SERVERS DEVELOPMENT PORTFOLIO */}
         <div ref={serverSectionRef}>
